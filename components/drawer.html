@@ -1,0 +1,935 @@
+<html lang="en">
+  
+  <head>
+    
+<title>Divider | MatCSS: An advanced and responsive CSS framework based on Material Design</title>
+<meta name="description"
+    content="Divider component for CSS3Material Framework. It can be used to display images or text" />
+<meta property="og:url" content="components/divider.html" />
+<meta property="og:title" content="Divider Component —  framework" />
+<meta property="og:description" content="Divider component for  framework">
+<meta name="keywords" content="Divider, pure css Divider, material design Divider" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Divider Component —  framework" />
+<link rel="canonical" href="https://MatCSS.com/components/divider.html" />
+<style>
+    .overlay.is-active {
+        animation: go .3s ease
+    }
+
+    @keyframes go {
+        from {
+            opacity: 0
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @media (max-width: 600px) {
+        .drawer--bottom {
+            position: absolute !important;
+            max-height: 80% !important
+        }
+    }
+</style>
+
+    
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="index, follow" />
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="author" content="Faheem Nawaz" />
+<meta name="web-author" content="Faheem Nawaz" />
+<meta content="on" http-equiv="cleartype" />
+<meta name="site_name" content="Docs" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<link rel="stylesheet" href="../css/main.css" />
+<link rel="stylesheet" href="../css/custom.css" />
+<link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16" />
+  </head>
+  <body>
+    <main id="site-wrapper" itemscope itemtype="http://schema.org/Article">
+      
+
+
+
+
+
+
+
+
+
+<aside class="drawer site-sidenav scrollbar f-active" v-bind:class="{'is-active': vDrawerActive}" id="site-drawer">
+    <div class="drawer-header flex flex--align-center flex--justify-center drawer-header--sm flex--dir-col">
+        <div class="show-md-and-down" style="display: none">
+            <img src="../../images/logo.png" class="toolbar-logo" alt="" />
+        </div>
+    </div>
+    <ul class="list list--drawer list--dense">
+        <li class="list-item">
+            <i class="material-icons icon list-item-start">house</i>
+            <a href="https://www.css3material.com/" class="list-item-detail">
+                <span class="list-item-title">Home</span>
+            </a>
+        </li>
+        <li class="list-item">
+            <i class="material-icons icon list-item-start">flash_on</i>
+            <a href="https://www.css3material.com/gettingstarted.com" class="list-item-detail">
+                <span class="list-item-title">Getting Started</span>
+            </a>
+        </li>
+        <li>
+            <ul class="expansion-panel smooth list list--dense">
+                <div class="expansion-panel-header list-item" id="al">
+                    <i class="material-icons icon list-item-start">layers</i>
+                    <span class="list-item-detail">
+                        <span class="list-item-title">Application Layout</span>
+                    </span>
+                    <span class="list-item-end material-icons arrow">keyboard_arrow_down</span>
+                </div>
+                <div class="expansion-panel-body">
+                    <ul class="list list-nested list--dense">
+                        
+                        <li class="list-item">
+                            <a href="https://www.css3material.com/layout/columns.html" class="list-item-detail">
+                                <span class="list-item-title"> Columns</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item">
+                            <a href="https://www.css3material.com/layout/elevation.html" class="list-item-detail">
+                                <span class="list-item-title"> Elevation</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item">
+                            <a href="https://www.css3material.com/layout/footer.html" class="list-item-detail">
+                                <span class="list-item-title"> Footer</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item">
+                            <a href="https://www.css3material.com/layout/hero.html" class="list-item-detail">
+                                <span class="list-item-title"> Hero</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </ul>
+        </li>
+        <li>
+            <ul class="expansion-panel smooth list list--dense">
+                <div class="expansion-panel-header list-item" id="cc">
+                    <i class="material-icons icon list-item-start">widgets</i>
+                    <span class="list-item-detail">
+                        <span class="list-item-title">Core Components</span>
+                    </span>
+                    <span class="list-item-end material-icons arrow">keyboard_arrow_down</span>
+                </div>
+                <div class="expansion-panel-body">
+                    <ul class="list list-nested list--dense">
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/avatar.html" class="list-item-detail">
+                                <span class="list-item-title">Avatar</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/badge.html" class="list-item-detail">
+                                <span class="list-item-title">Badge</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/banner.html" class="list-item-detail">
+                                <span class="list-item-title">Banner</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/bottom navigation.html" class="list-item-detail">
+                                <span class="list-item-title">Bottom Navigation</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/breadcrumb.html" class="list-item-detail">
+                                <span class="list-item-title">Breadcrumb</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/button.html" class="list-item-detail">
+                                <span class="list-item-title">Button</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/card.html" class="list-item-detail">
+                                <span class="list-item-title">Card</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/chip.html" class="list-item-detail">
+                                <span class="list-item-title">Chip</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/dialog.html" class="list-item-detail">
+                                <span class="list-item-title">Dialog</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/divider.html" class="list-item-detail">
+                                <span class="list-item-title">Divider</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/drawer.html" class="list-item-detail">
+                                <span class="list-item-title">Drawer</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/empty state.html" class="list-item-detail">
+                                <span class="list-item-title">Empty State</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/expansion panel.html" class="list-item-detail">
+                                <span class="list-item-title">Expansion Panel</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/lists.html" class="list-item-detail">
+                                <span class="list-item-title">Lists</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/menu.html" class="list-item-detail">
+                                <span class="list-item-title">Menu</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/messages.html" class="list-item-detail">
+                                <span class="list-item-title">Messages</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/pagination.html" class="list-item-detail">
+                                <span class="list-item-title">Pagination</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/progress.html" class="list-item-detail">
+                                <span class="list-item-title">Progress</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/snackbar.html" class="list-item-detail">
+                                <span class="list-item-title">Snackbar</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/table.html" class="list-item-detail">
+                                <span class="list-item-title">Table</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/tab.html" class="list-item-detail">
+                                <span class="list-item-title">Tab</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/toolbar.html" class="list-item-detail">
+                                <span class="list-item-title">Toolbar</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/tooltip.html" class="list-item-detail">
+                                <span class="list-item-title">Tooltip</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </ul>
+        </li>
+        <li>
+            <ul class="expansion-panel smooth list list--dense">
+                <div class="expansion-panel-header list-item" id="effects">
+                    <i class="material-icons icon list-item-start">style</i>
+                    <span class="list-item-detail">
+                        <span class="list-item-title">Effects</span>
+                    </span>
+                    <span class="list-item-end material-icons arrow">keyboard_arrow_down</span>
+                </div>
+                <div class="expansion-panel-body">
+                    <ul class="list list-nested list--dense">
+                        
+                        <li class="list-item">
+                            <a href="https://www.css3material.com/components/images.html" class="list-item-detail">
+                                <span class="list-item-title">Images</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item">
+                            <a href="https://www.css3material.com/components/media.html" class="list-item-detail">
+                                <span class="list-item-title">Media</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item">
+                            <a href="https://www.css3material.com/components/ripple.html" class="list-item-detail">
+                                <span class="list-item-title">Ripple</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </ul>
+        </li>
+        <li>
+            <ul class="expansion-panel smooth list list--dense">
+                <div class="expansion-panel-header list-item" id="forms">
+                    <i class="material-icons icon list-item-start">file_copy</i>
+                    <span class="list-item-detail">
+                       <span class="list-item-title">Forms</span>
+                    </span>
+                    <span class="list-item-end material-icons arrow">keyboard_arrow_down</span>
+                </div>
+                <div class="expansion-panel-body">
+                    <ul class="list list-nested list--dense">
+                        
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/forms/checkbox.html" class="list-item-detail">
+                                <span class="list-item-title">Checkbox</span>
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/forms/file.html" class="list-item-detail">
+                                <span class="list-item-title">File</span>
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/forms/radio.html" class="list-item-detail">
+                                <span class="list-item-title">Radio</span>
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/forms/range.html" class="list-item-detail">
+                                <span class="list-item-title">Range</span>
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/forms/select.html" class="list-item-detail">
+                                <span class="list-item-title">Select</span>
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/forms/switch.html" class="list-item-detail">
+                                <span class="list-item-title">Switch</span>
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/forms/textfields.html" class="list-item-detail">
+                                <span class="list-item-title">Textfield &amp; Textarea</span>
+                            </a>
+                        </li>
+                        
+                        
+                    </ul>
+                </div>
+            </ul>
+        </li>
+        <li>
+            <ul class="expansion-panel smooth list list--dense">
+                <div class="expansion-panel-header list-item" id="utils">
+                    <i class="material-icons icon list-item-start">touch_app</i>
+                    <span class="list-item-detail">
+                        <span class="list-item-title">Utilities</span>
+                    </span>
+                    <span class="list-item-end material-icons arrow">keyboard_arrow_down</span>
+                </div>
+                <div class="expansion-panel-body">
+                    <ul class="list list-nested list--dense">
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/utilities/colors.html" class="list-item-detail">
+                                <span class="list-item-title">Colors</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/utilities/cursor.html" class="list-item-detail">
+                                <span class="list-item-title">Cursor</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/utilities/positioning.html" class="list-item-detail">
+                                <span class="list-item-title">Positioning</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/utilities/shapes.html" class="list-item-detail">
+                                <span class="list-item-title">Shapes</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/utilities/text.html" class="list-item-detail">
+                                <span class="list-item-title">Text</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </ul>
+        </li>
+        <li class="list-item">
+            <i class="material-icons icon list-item-start">format_align_right</i>
+            <a href="https://www.css3material.com/typography.html" class="list-item-detail">
+                <span class="list-item-title">Typography</span>
+            </a>
+        </li>
+    </ul>
+</aside>
+<div class="overlay" v-bind:class="{'is-active': vDrawerActive}" id="site-drawer-overlay"
+    @click="vDrawerActive = !vDrawerActive"></div>
+      
+      
+<header id="site-toolbar" class="toolbar z-elevation-4 toolbar--persistent">
+    <div class="toolbar-brand">
+        <div style="display: none" class="show-md-and-up">
+            <img src="../../images/logo.png" class="toolbar-logo" alt="" />
+        </div>
+        <div class="show-md-and-down" style="display: none">
+            <i class="material-icons text-dark space-right--sm icon" v-bind:class="{'text-light': vDark}" @click="vDrawerActive = !vDrawerActive">menu</i>
+        </div>
+        <a href="https://MatCSS" class="" v-bind:class="{'text-light': vDark}">MatCSS</a>
+    </div>
+
+    <div class="toolbar-section toolbar-section--visible">
+        <ul class="toolbar-section-right">
+            <li class="toolbar-item">
+                <i class="material-icons icon space-right--sm text-dark" @click="toggleTheme" v-bind:class="{'text-light': vDark}">invert_colors</i>
+            </li>
+        </ul>
+    </div>
+</header>
+    
+      
+<section class="row row-centered">
+    <article class="col">
+
+        <h1 class="h1-fluid">Drawer</h1>
+
+        <ul class="list-reset list-doc">
+            <li><a href="#usage" title="Drawer - Usage"><strong>Usage</strong></a></li>
+            <li><a href="#right" title="Drawer - Right Aligned"><strong>Right Aligned Navigation Drawer</strong></a>
+            </li>
+            <li><a href="#permanent" title="Drawer - Permanent"><strong>Permanent Navigation Drawer</strong></a></li>
+            <li><a href="#persistent" title="Drawer - Persistent"><strong>Persistent Navigation Drawer</strong></a></li>
+            <li><a href="#bottom" title="Drawer - Bottom"><strong>Bottom Drawer</strong></a></li>
+            <li><a href="#classes" title="Drawer - CSS Classes explanation"><strong>CSS Classes
+                        explanation</strong></a></li>
+        </ul>
+
+
+        <h3 class="h5-fluid" itemprop="name" id="usage">Usage</h3>
+
+        <p class="text-fluid" itemprop="description">
+            The navigation drawer slides in from the left or right and contains the navigation destinations for your
+            app.
+        </p>
+
+        <p class="text-fluid">
+            There are 3 components of navigation drawer: <mark class="f-c">drawer</mark> which is the only required
+            element, <mark class="f-c">drawer-overlay</mark> which can be used to close navigation drawer and <mark
+                class="f-c">drawer-header</mark> which contains navigation drawer title or image.
+        </p>
+
+        <p class="text-fluid">
+            Navigation drawers are closed by default, you just have to toggle <mark class="f-c">is-active</mark> class
+            on drawer and the overlay (optional).
+        </p>
+
+        <br /><br />
+        <div class="d-c" style="position: relative; height: 300px; overflow: hidden; border: 1px solid #ccc">
+            <nav class="toolbar bs-4">
+                <div class="toolbar-title">
+                    <i class="material-icons icon" onclick="Drawer('#d1')">menu</i>
+                    <span class="space-left--sm">App Title</span>
+                </div>
+            </nav>
+            <aside class="drawer drawer--modal" style="z-index: 7;" id="d1">
+                <div class="drawer-header drawer-header--sm">
+                    <h6 class="title">Username</h6>
+                    <h6 class="subtitle2">useremail@emaail.com</h6>
+                </div>
+                <ul class="list list--drawer">
+                    <li class="list-item waves-effect">
+                        <span class="list-item-start material-icons icon">archive</span>
+                        <span class="list-item-detail">Inbox</span>
+                    </li>
+                    <li class="list-item waves-effect">
+                        <span class="list-item-start material-icons icon">send</span>
+                        <span class="list-item-detail">Send</span>
+                    </li>
+                    <hr class="divider" />
+                    <h6 class="subtitle2">Label</h6>
+                    <li class="list-item waves-effect">
+                        <span class="list-item-start material-icons icon">bookmarks</span>
+                        <span class="list-item-detail">Bookmark</span>
+                    </li>
+                </ul>
+            </aside>
+            <div class="overlay" style="position: absolute" onclick="Drawer('#d1')"></div>
+            <section class="row">
+                <div class="col">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, rem deserunt at debitis assumenda
+                        doloribus maxime quaerat impedit harum reiciendis.
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <pre class="f-code"><bc></bc>
+<code class="language-html">&lt;main&gt;
+    &lt;aside class="drawer drawer--modal" id="drawer-1"&gt;
+        &lt;div class="drawer-header drawer-header--sm"&gt;
+            &lt;h6 class="title"&gt;Username&lt;/h6&gt;
+            &lt;h6 class="subtitle2"&gt;useremail@email.com&lt;/h6&gt;
+        &lt;/div&gt;
+        &lt;ul class="list list--drawer"&gt;
+            &lt;li class="list-item"&gt;
+                &lt;span class="list-item-start material-icons icon"&gt;archive&lt;/span&gt;
+                &lt;span class="list-item-detail"&gt;Inbox&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="list-item"&gt;
+                &lt;span class="list-item-start material-icons icon"&gt;send&lt;/span&gt;
+                &lt;span class="list-item-detail"&gt;Send&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;hr class="divider" /&gt;
+            &lt;h6 class="subtitle2"&gt;Label&lt;/h6&gt;
+            &lt;li class="list-item"&gt;
+                &lt;span class="list-item-start material-icons icon"&gt;bookmarks&lt;/span&gt;
+                &lt;span class="list-item-detail"&gt;Bookmark&lt;/span&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/aside&gt;
+    &lt;div class="overlay" id="overlay-1" onclick="Drawer('#drawer-1', '#overlay-1')"&gt;&lt;/div&gt;
+    
+    &lt;nav class="toolbar bs-4"&gt;
+        &lt;div class="toolbar-title"&gt;
+            &lt;i class="material-icons icon" onclick="Drawer('#drawer-1', '#overlay-1')"&gt;menu&lt;/i&gt;
+            &lt;span class="space-left--sm"&gt;App Title&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+    
+    &lt;section class="row"&gt;
+        &lt;div class="col"&gt;
+            &lt;p&gt; Lorem.. &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+ &lt;/main&gt;
+</code>
+</pre>
+
+        <p class="text-fluid">
+            And here is a basic Javascript implementation:
+        </p>
+
+        <pre><bc></bc><code class="language-javascript">var Drawer = (function(doc){
+    return function(drawerId, overlayId){
+        doc.querySelector(drawerId).classList.toggle('is-active');
+        doc.querySelector(overlayId).classList.toggle('is-active');
+    }
+ })(document);
+</code></pre>
+
+        <h2 class="h5-fluid" itemprop="name">Right Aligned Drawer</h2>
+
+        <p class="text-fluid">
+            Use <mark class="f-c">drawer--right-align</mark> to position navigation drawer on
+            the right side of screen.
+        </p>
+
+        <button type="button" onclick="Drawer('#d2')" class="btn btn--raised waves-effect wd">right aligned
+            drawer</button>
+        <br /><br />
+        <div class="d-c"
+            style="position: relative; height: 300px; background: #eee; overflow: hidden; border: 1px solid #ccc">
+            <aside class="drawer drawer--modal drawer--right-align" id="d2">
+                <div class="drawer-header drawer-header--sm">
+                    <h6 class="title">Username</h6>
+                    <h6 class="subtitle2">useremail@emaail.com</h6>
+                </div>
+                <ul class="list list--drawer">
+                    <li class="list-item waves-effect">
+                        <span class="list-item-start material-icons icon">archive</span>
+                        <span class="list-item-detail">Inbox</span>
+                    </li>
+                    <li class="list-item waves-effect">
+                        <span class="list-item-start material-icons icon">send</span>
+                        <span class="list-item-detail">Send</span>
+                    </li>
+                    <hr class="divider" />
+                    <h6 class="subtitle2">Label</h6>
+                    <li class="list-item waves-effect">
+                        <span class="list-item-start material-icons icon">bookmarks</span>
+                        <span class="list-item-detail">Bookmark</span>
+                    </li>
+                </ul>
+            </aside>
+            <div class="overlay" style="position: absolute" onclick="Drawer('#d2')"></div>
+        </div>
+
+        <pre class="f-code"><bc></bc>
+<code class="language-html">&lt;aside id="drawer-2" class="drawer drawer--modal drawer--right-align"&gt;
+    ..
+ &lt;/aside&gt;
+ &lt;div class="overlay" id="overlay-2"&gt;&lt;/div&gt;
+</code>
+</pre>
+
+        <h1 class="h5-fluid" id="permanent" itemprop="name">Permanent Navigation Drawer</h1>
+        <p class="text-fluid" itemprop="description">
+            Permanent navigation drawers will be visible on larger screens, and automatically hidden on smaller screens.
+            Navigation Drawer on the left is an example of permanent drawer.
+        </p>
+
+        <pre class="f-code"><bc></bc>
+    <code class="language-html">&lt;main class="drawer-offset-left"&gt;
+    &lt;aside class="drawer drawer--permanent" id="drawer-3"&gt;
+        &lt;div class="drawer-header drawer-header--sm"&gt;
+            &lt;h6 class="title"&gt;Username&lt;/h6&gt;
+            &lt;h6 class="subtitle2"&gt;useremail@email.com&lt;/h6&gt;
+        &lt;/div&gt;
+        &lt;ul class="list list--drawer"&gt;
+            &lt;li class="list-item"&gt;
+                &lt;span class="list-item-start material-icons icon"&gt;archive&lt;/span&gt;
+                &lt;span class="list-item-detail"&gt;Inbox&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="list-item"&gt;
+                &lt;span class="list-item-start material-icons icon"&gt;send&lt;/span&gt;
+                &lt;span class="list-item-detail"&gt;Send&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;hr class="divider" /&gt;
+            &lt;h6 class="subtitle2"&gt;Label&lt;/h6&gt;
+            &lt;li class="list-item"&gt;
+                &lt;span class="list-item-start material-icons icon"&gt;bookmarks&lt;/span&gt;
+                &lt;span class="list-item-detail"&gt;Bookmark&lt;/span&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/aside&gt;
+    &lt;div class="overlay" id="overlay-3" onclick="Drawer('#drawer-3', '#overlay-3')"&gt;&lt;/div&gt;
+    
+    &lt;nav class="toolbar bs-4"&gt;
+        &lt;div class="toolbar-title"&gt;
+            &lt;div class="hide show-md-and-down"&gt;
+                &lt;i class="material-icons icon" onclick="Drawer('#drawer-3', '#overlay-3')"&gt;menu&lt;/i&gt;
+            &lt;/div&gt;   
+            &lt;span class="space-left--sm"&gt;App Title&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+    
+    &lt;section class="row"&gt;
+        &lt;div class="col"&gt;
+            &lt;p&gt; Lorem.. &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+ &lt;/main&gt;
+</code>
+</pre>
+
+        <h1 class="h5-fluid" id="persistent" itemprop="name">Persistent Navigation Drawer</h1>
+        <p class="text-fluid" itemprop="description">
+            Follow these steps to convert a regular or permanent drawer into a persistent drawer.
+        </p>
+
+
+        <li>
+            Toggle <mark class="f-c">drawer-offset-left</mark> and
+            <mark class="f-c">drawer--permanent</mark> classes on screens > medium.
+        </li>
+        <li>
+            Toggle <mark class="f-c">is-active</mark> class on both drawer and overlay on screens < medium. </li> <pre>
+                <bc></bc><code class="language-javascript">var Drawer = (function(doc){
+                    return function(drawerId, overlayId){
+                    if(window.innerWidth > 960){
+                    doc.querySelector('main').classList.toggle('drawer-offset-left');
+                    doc.querySelector(drawerId).classList.toggle('drawer--permanent');
+                    } else {
+                    doc.querySelector(drawerId).classList.toggle('is-active');
+                    doc.querySelector(overlayId).classList.toggle('is-active');
+                    }
+                    }
+                    })(document);
+                </code>
+        </pre>
+
+
+        <h2 class="h5-fluid" itemprop="name" id="bottom">Bottom Drawer</h2>
+
+        <p class="text-fluid" itemprop="description">
+            By using <mark class="f-c">drawer--bottom</mark>, regular navigation drawer will be converted into a
+            bottom navigation drawer on smaller screens i.e mobile devices.
+        </p>
+
+        <button type="button" onclick="Drawer('#d6')" class="btn btn--raised waves-effect wd">bottom drawer</button>
+        <br /><br />
+        <div class="d-c"
+            style="position: relative; height: 300px; background: #eee; overflow: hidden; border: 1px solid #ccc">
+            <aside class="drawer drawer--modal drawer--bottom" id="d6">
+                <div class="drawer-header drawer-header--sm">
+                    <h6 class="title">Username</h6>
+                    <h6 class="subtitle2">useremail@emaail.com</h6>
+                </div>
+                <ul class="list list--drawer">
+                    <li class="list-item waves-effect">
+                        <span class="list-item-start material-icons icon">archive</span>
+                        <span class="list-item-detail">Inbox</span>
+                    </li>
+                    <li class="list-item waves-effect">
+                        <span class="list-item-start material-icons icon">send</span>
+                        <span class="list-item-detail">Send</span>
+                    </li>
+                    <hr class="divider" />
+                    <h6 class="subtitle2">Label</h6>
+                    <li class="list-item waves-effect">
+                        <span class="list-item-start material-icons icon">bookmarks</span>
+                        <span class="list-item-detail">Bookmark</span>
+                    </li>
+                </ul>
+            </aside>
+            <div class="overlay" style="position: absolute" onclick="Drawer('#d6')"></div>
+        </div>
+
+        <pre class="f-code"><bc></bc>
+<code class="language-html">&lt;aside id="drawer-6" class="drawer drawer--modal drawer--bottom"&gt;
+ ..
+ &lt;/aside&gt;
+ &lt;div class="overlay" id="overlay-6"&gt;&lt;/div&gt;
+</code>
+</pre>
+
+        <h1 class="h3-fluid" id="classes">Classes Details</h1>
+        <table class="table-bordered">
+            <thead>
+                <tr>
+                    <th>CSS Class</th>
+                    <th>Explanation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>drawer</td>
+                    <td>Required ! Acts as a container for all drawer content</td>
+                </tr>
+                <tr>
+                    <td data-n>drawer-overlay</td>
+                    <td>Creates drawer overlay, can be used to closed drawer</td>
+                </tr>
+                <tr>
+                    <td data-n>drawer-title</td>
+                    <td>Drawer title styling</td>
+                </tr>
+                <tr>
+                    <td data-n>drawer-subtitle</td>
+                    <td>Drawer subtitle styling</td>
+                </tr>
+                <tr>
+                    <td data-n>drawer-header</td>
+                    <td>Contains user information</td>
+                </tr>
+                <tr>
+                    <td data-n>drawer-header-sm</td>
+                    <td>Creates a small header</td>
+                </tr>
+                <tr>
+                    <td data-n>drawer-header-lg</td>
+                    <td>Creates a large header</td>
+                </tr>
+                <tr>
+                    <td>active</td>
+                    <td>Activates drawer</td>
+                </tr>
+                <tr>
+                    <td>drawer-right-align</td>
+                    <td>Positions Navigation drawer to the right side of screen</td>
+                </tr>
+                <tr>
+                    <td>drawer-fixed</td>
+                    <td>Applies fixed position to the navigation drawer</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+        <h6 class="h5-fluid">Next..</h6>
+        <section class="row row-next">
+            
+
+<article class="col col-sm-4">
+    <div class="card waves-effect card-next hoverable" v-bind:class="{'bg-dark': vDark}">
+        <a href="https://matcss.com/components/emptystates.html">
+            <div class="card-section">
+                <i class="material-icons icon" :class="{'text-light': vDark}">widgets</i>
+                <span class="space-left--xs" :class="{'text-light': vDark}">Empty States</span>
+            </div>
+        </a>
+    </div>
+</article>
+
+
+            
+
+<article class="col col-sm-4">
+    <div class="card waves-effect card-next hoverable" v-bind:class="{'bg-dark': vDark}">
+        <a href="https://matcss.com/components/expansionpanel.html">
+            <div class="card-section">
+                <i class="material-icons icon" :class="{'text-light': vDark}">widgets</i>
+                <span class="space-left--xs" :class="{'text-light': vDark}">Expansion Panel</span>
+            </div>
+        </a>
+    </div>
+</article>
+
+
+            
+
+<article class="col col-sm-4">
+    <div class="card waves-effect card-next hoverable" v-bind:class="{'bg-dark': vDark}">
+        <a href="https://matcss.com/components/lists.html">
+            <div class="card-section">
+                <i class="material-icons icon" :class="{'text-light': vDark}">widgets</i>
+                <span class="space-left--xs" :class="{'text-light': vDark}">Lists</span>
+            </div>
+        </a>
+    </div>
+</article>
+
+
+        </section>
+
+    </article>
+</section>
+
+      
+      
+<footer class="footer row" id="site-footer">
+    <section class="col text-center">
+        <p class="text-fluid" style="margin-bottom: 0.25rem" itemprop="articleBody">
+        MatCSS is a modern and responsive CSS framework based on <a :class="{'text-light': vDark}" href="https://material.io/">Material design</a>.
+        </p>
+        <span>Made with <i class="material-icons icon text-red">favorite</i> by Faheem Nawaz</span>.
+        <br />
+        </section>
+</footer>
+    
+    </main>
+    
+    <button type="button" id="btnTop" class="btn pos-fixed pos--bottom-right btn--floating waves-effect waves-light">
+        <i class="material-icons">keyboard_arrow_up</i>
+    </button>
+
+    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
+<script src="../js//main.js"></script>
+    
+
+<script>
+    CM.toggleExpansionPanel('#cc', true);
+    app.activateLink('Drawer');
+
+    var Drawer = (function (doc) {
+        return function (drawerId) {
+            doc.querySelector(drawerId).classList.toggle('is-active');
+            doc.querySelector(drawerId).nextElementSibling.classList.toggle('is-active');
+        }
+    })(document);
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Webpage",
+        "url": "https://amp.dev/documentation/guides-and-tutorials/optimize-and-measure/discovery ",
+        "name": "amp.dev",
+        "headline": "Material Design Avatars - CSS Framework",
+        "description": "Avatars are used to display images. They are used within other elements and can also contain text and icons",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://MatCSS"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "MatCSS",
+            "logo": {
+                "url": "",
+                "width": 512,
+                "height": 512,
+                "@type": "ImageObject"
+            }
+        },
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://amp.dev/static/img/sharing/docs-guide-600x314.png",
+            "width": 600,
+            "height": 314
+        }
+    }
+</script>
+
+
+  </body>
+</html>

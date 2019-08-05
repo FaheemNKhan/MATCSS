@@ -1,0 +1,921 @@
+<html lang="en">
+  
+  <head>
+    
+<title>Dialog | MatCSS | A CSS framework based on Material Design</title>
+<meta name="description"
+    content="Dialog component for CSS3Material Framework. It can be used to display images or text" />
+<meta property="og:url" content="https://www.MatCSS.com/components/dialog.html" />
+<meta property="og:title" content="Dialog Component — MatCSS framework" />
+<meta property="og:description" content="Dialog component for MatCSS framework">
+<meta name="keywords" content="Dialog, pure css Dialog, material design Dialog" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Dialog Component —  framework" />
+<link rel="canonical" href="https://matcss.com/components/dialog.html" />
+<style>
+    #dark .dialog-surface {
+        background: #222
+    }
+</style>
+
+    
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="index, follow" />
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="author" content="Faheem Nawaz" />
+<meta name="web-author" content="Faheem Nawaz" />
+<meta content="on" http-equiv="cleartype" />
+<meta name="site_name" content="Docs" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<link rel="stylesheet" href="../css/main.css" />
+<link rel="stylesheet" href="../css/custom.css" />
+<link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16" />
+  </head>
+  <body>
+    <main id="site-wrapper" itemscope itemtype="http://schema.org/Article">
+      
+
+
+
+
+
+
+
+
+
+<aside class="drawer site-sidenav scrollbar f-active" v-bind:class="{'is-active': vDrawerActive}" id="site-drawer">
+    <div class="drawer-header flex flex--align-center flex--justify-center drawer-header--sm flex--dir-col">
+        <div class="show-md-and-down" style="display: none">
+            <img src="../../images/logo.png" class="toolbar-logo" alt="" />
+        </div>
+    </div>
+    <ul class="list list--drawer list--dense">
+        <li class="list-item">
+            <i class="material-icons icon list-item-start">house</i>
+            <a href="https://www.css3material.com/" class="list-item-detail">
+                <span class="list-item-title">Home</span>
+            </a>
+        </li>
+        <li class="list-item">
+            <i class="material-icons icon list-item-start">flash_on</i>
+            <a href="https://www.css3material.com/gettingstarted.com" class="list-item-detail">
+                <span class="list-item-title">Getting Started</span>
+            </a>
+        </li>
+        <li>
+            <ul class="expansion-panel smooth list list--dense">
+                <div class="expansion-panel-header list-item" id="al">
+                    <i class="material-icons icon list-item-start">layers</i>
+                    <span class="list-item-detail">
+                        <span class="list-item-title">Application Layout</span>
+                    </span>
+                    <span class="list-item-end material-icons arrow">keyboard_arrow_down</span>
+                </div>
+                <div class="expansion-panel-body">
+                    <ul class="list list-nested list--dense">
+                        
+                        <li class="list-item">
+                            <a href="https://www.css3material.com/layout/columns.html" class="list-item-detail">
+                                <span class="list-item-title"> Columns</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item">
+                            <a href="https://www.css3material.com/layout/elevation.html" class="list-item-detail">
+                                <span class="list-item-title"> Elevation</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item">
+                            <a href="https://www.css3material.com/layout/footer.html" class="list-item-detail">
+                                <span class="list-item-title"> Footer</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item">
+                            <a href="https://www.css3material.com/layout/hero.html" class="list-item-detail">
+                                <span class="list-item-title"> Hero</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </ul>
+        </li>
+        <li>
+            <ul class="expansion-panel smooth list list--dense">
+                <div class="expansion-panel-header list-item" id="cc">
+                    <i class="material-icons icon list-item-start">widgets</i>
+                    <span class="list-item-detail">
+                        <span class="list-item-title">Core Components</span>
+                    </span>
+                    <span class="list-item-end material-icons arrow">keyboard_arrow_down</span>
+                </div>
+                <div class="expansion-panel-body">
+                    <ul class="list list-nested list--dense">
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/avatar.html" class="list-item-detail">
+                                <span class="list-item-title">Avatar</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/badge.html" class="list-item-detail">
+                                <span class="list-item-title">Badge</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/banner.html" class="list-item-detail">
+                                <span class="list-item-title">Banner</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/bottom navigation.html" class="list-item-detail">
+                                <span class="list-item-title">Bottom Navigation</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/breadcrumb.html" class="list-item-detail">
+                                <span class="list-item-title">Breadcrumb</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/button.html" class="list-item-detail">
+                                <span class="list-item-title">Button</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/card.html" class="list-item-detail">
+                                <span class="list-item-title">Card</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/chip.html" class="list-item-detail">
+                                <span class="list-item-title">Chip</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/dialog.html" class="list-item-detail">
+                                <span class="list-item-title">Dialog</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/divider.html" class="list-item-detail">
+                                <span class="list-item-title">Divider</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/drawer.html" class="list-item-detail">
+                                <span class="list-item-title">Drawer</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/empty state.html" class="list-item-detail">
+                                <span class="list-item-title">Empty State</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/expansion panel.html" class="list-item-detail">
+                                <span class="list-item-title">Expansion Panel</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/lists.html" class="list-item-detail">
+                                <span class="list-item-title">Lists</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/menu.html" class="list-item-detail">
+                                <span class="list-item-title">Menu</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/messages.html" class="list-item-detail">
+                                <span class="list-item-title">Messages</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/pagination.html" class="list-item-detail">
+                                <span class="list-item-title">Pagination</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/progress.html" class="list-item-detail">
+                                <span class="list-item-title">Progress</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/snackbar.html" class="list-item-detail">
+                                <span class="list-item-title">Snackbar</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/table.html" class="list-item-detail">
+                                <span class="list-item-title">Table</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/tab.html" class="list-item-detail">
+                                <span class="list-item-title">Tab</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/toolbar.html" class="list-item-detail">
+                                <span class="list-item-title">Toolbar</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/tooltip.html" class="list-item-detail">
+                                <span class="list-item-title">Tooltip</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </ul>
+        </li>
+        <li>
+            <ul class="expansion-panel smooth list list--dense">
+                <div class="expansion-panel-header list-item" id="effects">
+                    <i class="material-icons icon list-item-start">style</i>
+                    <span class="list-item-detail">
+                        <span class="list-item-title">Effects</span>
+                    </span>
+                    <span class="list-item-end material-icons arrow">keyboard_arrow_down</span>
+                </div>
+                <div class="expansion-panel-body">
+                    <ul class="list list-nested list--dense">
+                        
+                        <li class="list-item">
+                            <a href="https://www.css3material.com/components/images.html" class="list-item-detail">
+                                <span class="list-item-title">Images</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item">
+                            <a href="https://www.css3material.com/components/media.html" class="list-item-detail">
+                                <span class="list-item-title">Media</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item">
+                            <a href="https://www.css3material.com/components/ripple.html" class="list-item-detail">
+                                <span class="list-item-title">Ripple</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </ul>
+        </li>
+        <li>
+            <ul class="expansion-panel smooth list list--dense">
+                <div class="expansion-panel-header list-item" id="forms">
+                    <i class="material-icons icon list-item-start">file_copy</i>
+                    <span class="list-item-detail">
+                       <span class="list-item-title">Forms</span>
+                    </span>
+                    <span class="list-item-end material-icons arrow">keyboard_arrow_down</span>
+                </div>
+                <div class="expansion-panel-body">
+                    <ul class="list list-nested list--dense">
+                        
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/forms/checkbox.html" class="list-item-detail">
+                                <span class="list-item-title">Checkbox</span>
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/forms/file.html" class="list-item-detail">
+                                <span class="list-item-title">File</span>
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/forms/radio.html" class="list-item-detail">
+                                <span class="list-item-title">Radio</span>
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/forms/range.html" class="list-item-detail">
+                                <span class="list-item-title">Range</span>
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/forms/select.html" class="list-item-detail">
+                                <span class="list-item-title">Select</span>
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/forms/switch.html" class="list-item-detail">
+                                <span class="list-item-title">Switch</span>
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/forms/textfields.html" class="list-item-detail">
+                                <span class="list-item-title">Textfield &amp; Textarea</span>
+                            </a>
+                        </li>
+                        
+                        
+                    </ul>
+                </div>
+            </ul>
+        </li>
+        <li>
+            <ul class="expansion-panel smooth list list--dense">
+                <div class="expansion-panel-header list-item" id="utils">
+                    <i class="material-icons icon list-item-start">touch_app</i>
+                    <span class="list-item-detail">
+                        <span class="list-item-title">Utilities</span>
+                    </span>
+                    <span class="list-item-end material-icons arrow">keyboard_arrow_down</span>
+                </div>
+                <div class="expansion-panel-body">
+                    <ul class="list list-nested list--dense">
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/utilities/colors.html" class="list-item-detail">
+                                <span class="list-item-title">Colors</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/utilities/cursor.html" class="list-item-detail">
+                                <span class="list-item-title">Cursor</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/utilities/positioning.html" class="list-item-detail">
+                                <span class="list-item-title">Positioning</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/utilities/shapes.html" class="list-item-detail">
+                                <span class="list-item-title">Shapes</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/utilities/text.html" class="list-item-detail">
+                                <span class="list-item-title">Text</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </ul>
+        </li>
+        <li class="list-item">
+            <i class="material-icons icon list-item-start">format_align_right</i>
+            <a href="https://www.css3material.com/typography.html" class="list-item-detail">
+                <span class="list-item-title">Typography</span>
+            </a>
+        </li>
+    </ul>
+</aside>
+<div class="overlay" v-bind:class="{'is-active': vDrawerActive}" id="site-drawer-overlay"
+    @click="vDrawerActive = !vDrawerActive"></div>
+      
+      
+<header id="site-toolbar" class="toolbar z-elevation-4 toolbar--persistent">
+    <div class="toolbar-brand">
+        <div style="display: none" class="show-md-and-up">
+            <img src="../../images/logo.png" class="toolbar-logo" alt="" />
+        </div>
+        <div class="show-md-and-down" style="display: none">
+            <i class="material-icons text-dark space-right--sm icon" v-bind:class="{'text-light': vDark}" @click="vDrawerActive = !vDrawerActive">menu</i>
+        </div>
+        <a href="https://MatCSS" class="" v-bind:class="{'text-light': vDark}">MatCSS</a>
+    </div>
+
+    <div class="toolbar-section toolbar-section--visible">
+        <ul class="toolbar-section-right">
+            <li class="toolbar-item">
+                <i class="material-icons icon space-right--sm text-dark" @click="toggleTheme" v-bind:class="{'text-light': vDark}">invert_colors</i>
+            </li>
+        </ul>
+    </div>
+</header>
+    
+      
+<section class="row row-centered">
+    <article class="col">
+
+        <h1 class="h1-fluid">Dialog</h1>
+
+        <hr />
+
+        <ul class="list-reset list-doc">
+            <li><a href="#usage" title="Dialog - Usage"><strong>Usage</strong></a></li>
+            <li><a href="#dialogSheets" title="Dialog - Dialog as Bottom/Top Sheet"><strong>Dialog Sheets</strong></a>
+            </li>
+            <li><a href="#examples" title="Dialog - Variations"><strong>Dialog Examples</strong></a></li>
+            <li><a href="#classes" title="Dialog - CSS Classes explanation"><strong>CSS Classes explanation</strong></a>
+            </li>
+        </ul>
+
+
+        <h2 class="h5-fluid" id="usage" itemprop="name">Usage</h2>
+
+        <p class="text-fluid" itemprop="description">
+            A Dialog is a small window that communicates information to the user and prompts them for a response.
+        </p>
+
+        <p class="text-fluid" itemprop="description">
+            Dialog structure has dialog surface, overlay and action buttons, defined by <mark
+                class="f-c">dialog-surface</mark>, <mark class="f-c">overlay</mark> which is optional and <mark
+                class="f-c">dialog-actions</mark>, respectively.
+        </p>
+
+        <p class="text-fluid" itemprop="description">
+            <mark class="f-c">.overlay</mark> component must be placed inside the dialog for proper functionality.
+        </p>
+
+        <div class="dialog dialog--width-auto" id="dialog1">
+            <div class="overlay" onclick="Dialog('#dialog1')"></div>
+            <div class="dialog-surface" v-bind:class="{'bg-transparent': vDark}">
+                <h2 class="dialog-title" v-bind:class="{'text-light': vDark}">Dialog Title</h2>
+                <p v-bind:class="{'text-light': vDark}">
+                    Dialogs inform users about a specific task
+                </p>
+                <div class="dialog-actions">
+                    <button type="button" class="btn waves-effect" onclick="Dialog('#dialog1')">action 1</button>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn--raised wd waves-effect" id="btn-dialog-1"
+            v-bind:class="{'bg-transparent': vDark, 'btn--outlined': vDark}" onclick="Dialog('#dialog1')">open
+            dialog</button>
+
+        <pre class="f-code"><bc></bc><code class="language-html">&lt;button type="button" class="btn" id="btn-dialog-1" 
+            onclick="Dialog('#dialog1')"&gt;open dialog&lt;/button&gt;
+
+ &lt;div class="dialog" id="dialog1"&gt;
+    &lt;div class="overlay" onclick="Dialog('#dialog1')"&gt;&lt;/div&gt;
+    &lt;div class="dialog-surface"&gt;
+        &lt;h2 class="dialog-title">Dialog Title&lt;/h2&gt;
+        &lt;p&gt;Dialog Text&lt;/p&gt;
+        &lt;div class="dialog-actions"&gt;
+            &lt;button type="button" class="btn"&gt;action 1&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+ &lt;/div&gt;
+</code>
+</pre>
+
+        <p>
+            You can replace <strong>onclick</strong> with <strong>addEventListener</strong>. A sample javascript
+            implementation is as follows:
+        </p>
+
+        <pre class="f-code"><bc></bc><code class="language-javascript">var Dialog = (function(doc){
+    return function(dialogId){
+        doc.querySelector(dialogId).classList.toggle('is-active');
+        doc.querySelector(dialogId).querySelector('.overlay').classList.toggle('is-active');
+        doc.querySelector('html').classList.toggle('no-scroll'); // to stop background scrolling
+    }
+ })(document);
+</code>
+</pre>
+        <h3 class="h5-fluid" id="dialogSheets">Dialog Sheets</h3>
+
+        <p class="text-fluid">
+            You can convert the regular dialog to bottom/top sheet by just adding <mark
+                class="f-c">dialog--bottom|top-sheet</mark> class.
+        </p>
+
+        <button type="button" class="btn btn--raised waves-effect wd" v-bind:class="{'btn--outlined': vDark}"
+            onclick="Dialog('#dialog3')">bottom</button>
+        <button type="button" class="btn btn--raised waves-effect wd" v-bind:class="{'btn--outlined': vDark}"
+            onclick="Dialog('#dialog4')">top</button>
+
+        <div class="dialog dialog--bottom-sheet dialog--width-auto" id="dialog3"
+            v-bind:class="{'bg-transparent': vDark}">
+            <div class="overlay" id="overlay-dialog-3" onclick="Dialog('#dialog3', '#overlay-dialog-3')"></div>
+            <div class="dialog-surface rounded-top no-padding" v-bind:class="{'bg-transparent': vDark}">
+                <ul class="list w-fluid" style="width: 400px" v-bind:class="{'bg-transparent': vDark}">
+                    <li class="list-item">
+                        <i class="material-icons icon list-item-start">share</i>
+                        <span class="list-item-detail">
+                            <span class="title">Share</span>
+                        </span>
+                    </li>
+                    <li class="list-item">
+                        <span class="list-item-start material-icons icon">cloud_upload</span>
+                        <span class="list-item-detail">
+                            <span class="title">Upload</span>
+                        </span>
+                    </li>
+                    <li class="list-item">
+                        <span class="list-item-start material-icons icon">create</span>
+                        <span class="list-item-detail">
+                            <span class="title">Edit Link</span>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="dialog dialog--top-sheet dialog--width-auto" id="dialog4" v-bind:class="{'bg-transparent': vDark}">
+            <div class="overlay" onclick="Dialog('#dialog4')"></div>
+            <div class="dialog-surface rounded-bottom" v-bind:class="{'bg-transparent': vDark}">
+                <div :class="{'text-light': vDark}">Cant connect ! Retrying after 5 seconds.. </div>
+            </div>
+        </div>
+
+
+        <pre class="f-code f-code-mini"><ec></ec><bc></bc><code class="language-html">&lt;div class="dialog dialog--bottom-sheet dialog--width-auto" id="bottom-sheet-1"&gt;
+    &lt;div class="overlay" onclick="Dialog('#bottom-sheet-1')"&gt;&lt;/div&gt;
+    &lt;div class="dialog-surface no-padding"&gt;
+        &lt;ul class="list w-fluid" style="width: 400px"&gt;
+            &lt;li class="list-item"&gt;
+                &lt;span class="list-item-start material-icons icon"&gt;share&lt;/span&gt;
+                &lt;span class="list-item-detail"&gt;
+                    &lt;span class="list-item-title"&gt;Share&lt;/span&gt;
+                &lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="list-item"&gt;
+                &lt;span class="list-item-start material-icons icon"&gt;cloud_upload&lt;/span&gt;
+                &lt;span class="list-item-detail"&gt;
+                    &lt;span class="list-item-title"&gt;Upload&lt;/span&gt;
+                &lt;/span&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+ &lt;/div&gt;
+
+ &lt;div class="dialog dialog--top-sheet dialog--width-auto" id="top-sheet-1"&gt;
+    ...
+ &lt;/div&gt;
+</code>
+</pre>
+
+        <h1 class="h5-fluid" id="examples">Dialog Examples</h1>
+
+        <button type="button" class="btn btn--sm btn--raised" v-bind:class="{'btn--outlined': vDark}"
+            onclick="Dialog('#dialogWithControls')">with
+            controls</button>
+        <button type="button" class="btn btn--sm btn--raised" v-bind:class="{'btn--outlined': vDark}"
+            onclick="Dialog('#dialogAlert')">scrollable</button>
+
+        <aside class="dialog" id="dialogAlert">
+            <div class="overlay" onclick="Dialog('#dialogAlert', '#overlay-dialog-alert')" id="overlay-dialog-alert">
+            </div>
+            <div class="dialog-surface">
+                <h1 class="dialog-title">Scrollable Dialog</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsum adipisci fuga neque! Nam
+                    commodi corporis libero sunt ipsa laudantium beatae esse amet voluptates quisquam. Quod ex hic
+                    libero assumenda debitis magnam sit consequatur mollitia accusamus dolor atque totam dignissimos
+                    incidunt, tempore sapiente quaerat dolores beatae vero similique voluptatum eos pariatur distinctio.
+                    Incidunt vel molestiae illum cupiditate. Quod repudiandae quam mollitia explicabo cumque? Quaerat
+                    ipsam voluptate rem officia, iusto voluptates. Suscipit aspernatur corporis voluptates, placeat
+                    pariatur porro ullam voluptatem error hic neque nobis accusamus officiis et quod repudiandae culpa
+                    quia, at, mollitia temporibus ipsum necessitatibus quo vero cupiditate? Aliquid, amet!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, alias quod laudantium aspernatur
+                    aliquid vel voluptatum ad sit quisquam corrupti aut enim reprehenderit harum molestias nulla nobis,
+                    quibusdam consequatur rerum! Alias nesciunt corrupti non id ipsum dolorum nemo, eius quos reiciendis
+                    blanditiis dolore autem similique, provident dignissimos tenetur recusandae quia tempore iure
+                    asperiores adipisci. Quas eum maiores dignissimos, magni non vitae magnam distinctio cum quos
+                    blanditiis. Accusantium molestiae, consectetur illo minima delectus amet dolores odio iste. Ea
+                    architecto optio iste animi expedita numquam non quidem sunt ut aliquid sequi exercitationem,
+                    aspernatur laborum natus quibusdam at commodi sed obcaecati dolor libero.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, alias quod laudantium aspernatur
+                    aliquid vel voluptatum ad sit quisquam corrupti aut enim reprehenderit harum molestias nulla nobis,
+                    quibusdam consequatur rerum! Alias nesciunt corrupti non id ipsum dolorum nemo, eius quos reiciendis
+                    blanditiis dolore autem similique, provident dignissimos tenetur recusandae quia tempore iure
+                    asperiores adipisci. Quas eum maiores dignissimos, magni non vitae magnam distinctio cum quos
+                    blanditiis. Accusantium molestiae, consectetur illo minima delectus amet dolores odio iste. Ea
+                    architecto optio iste animi expedita numquam non quidem sunt ut aliquid sequi exercitationem,
+                    aspernatur laborum natus quibusdam at commodi sed obcaecati dolor libero.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, alias quod laudantium aspernatur
+                    aliquid vel voluptatum ad sit quisquam corrupti aut enim reprehenderit harum molestias nulla nobis,
+                    quibusdam consequatur rerum! Alias nesciunt corrupti non id ipsum dolorum nemo, eius quos reiciendis
+                    blanditiis dolore autem similique, provident dignissimos tenetur recusandae quia tempore iure
+                    asperiores adipisci. Quas eum maiores dignissimos, magni non vitae magnam distinctio cum quos
+                    blanditiis. Accusantium molestiae, consectetur illo minima delectus amet dolores odio iste. Ea
+                    architecto optio iste animi expedita numquam non quidem sunt ut aliquid sequi exercitationem,
+                    aspernatur laborum natus quibusdam at commodi sed obcaecati dolor libero.
+                </p>
+                <div class="dialog-actions">
+                    <button type="button" class="btn btn--flat"
+                        onclick="Dialog('#dialogAlert', '#overlay-dialog-alert')">ok</button>
+                </div>
+            </div>
+        </aside>
+
+
+        <aside class="dialog" id="dialogWithControls">
+            <div class="overlay" onclick="Dialog('#dialogWithControls', '#overlay-dialog-controls')"
+                id="overlay-dialog-controls">
+            </div>
+            <div class="dialog-surface">
+                <ul class="list">
+                    <li class="list-item">
+                        <span class="list-item-detail">With Checkbox</span>
+                        <span class="list-item-end">
+                            <label for="cb1" class="form-checkbox">
+                                <input type="checkbox" id="cb1" />
+                                <span class="form-check"></span>
+                            </label>
+                        </span>
+                    </li>
+                    <li class="list-item">
+                        <span class="list-item-detail">With Radio Button</span>
+                        <span class="list-item-end">
+                            <label for="rb1" class="form-radio">
+                                <input type="radio" id="rb1" />
+                                <span class="form-radio-thumb"></span>
+                            </label>
+                        </span>
+                    </li>
+                    <li class="list-item">
+                        <span class="list-item-detail">With Switch</span>
+                        <span class="list-item-end">
+                            <label for="sw1" class="form-switch">
+                                <input type="checkbox" id="sw1" />
+                                <span class="form-switch-thumb"></span>
+                            </label>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <pre class="f-code f-code-mini"><ec></ec><bc></bc><code class="language-html">&lt;div class="dialog" id="dialog-with-controls"&gt;
+    &lt;div class="overlay"&gt;&lt;/div&gt;
+    &lt;div class="dialog-surface"&gt;
+        &lt;ul class="list"&gt;
+            &lt;li class="list-item"&gt;
+                &lt;span class="list-item-detail"&gt;With Checkbox&lt;/span&gt;
+                &lt;span class="list-item-end"&gt;
+                    &lt;label for="cb1" class="form-checkbox"&gt;
+                        &lt;input type="checkbox" id="cb1" /&gt;
+                        &lt;span class="form-check"&gt;&lt;/span&gt;
+                    &lt;/label&gt;
+                &lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="list-item"&gt;
+                &lt;span class="list-item-detail"&gt;With Radio Button&lt;/span&gt;
+                &lt;span class="list-item-end"&gt;
+                    &lt;label for="rb1" class="form-radio"&gt;
+                        &lt;input type="radio" id="rb1" /&gt;
+                        &lt;span class="form-radio-thumb"&gt;&lt;/span&gt;
+                    &lt;/label&gt;
+                &lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="list-item"&gt;
+                &lt;span class="list-item-detail"&gt;With Switch&lt;/span&gt;
+                &lt;span class="list-item-end"&gt;
+                    &lt;label for="sw1" class="form-switch"&gt;
+                        &lt;input type="checkbox" id="sw1" /&gt;
+                        &lt;span class="form-switch-thumb"&gt;&lt;/span&gt;
+                    &lt;/label&gt;
+                &lt;/span&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;       
+ &lt;/div&gt;
+</code>
+</pre>
+
+        <pre class="f-code f-code-mini"><ec></ec><bc></bc><code class="language-html">&lt;div class="dialog" id="dialog-scrollable"&gt;
+    &lt;div class="overlay"&gt;&lt;/div&gt;
+    &lt;div class="dialog-surface"&gt;
+        &lt;h2 class="title"&gt;Scrollable dialog&lt;/h2&gt;
+        Lorem..
+        &lt;div class="dialog-actions"&gt;
+            &lt;button type="button" class="btn"&gt;ok&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+ &lt;/div&gt;
+</code>
+</pre>
+
+        <h5 class="h5-fluid" id="classes">Classes Details</h5>
+        <table class="table--bordered table--responsive">
+            <thead>
+                <tr>
+                    <th>CSS Class</th>
+                    <th>Explanation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>dialog</td>
+                    <td>Required ! Acts as a container for all dialog content</td>
+                </tr>
+                <tr>
+                    <td>overlay</td>
+                    <td>Creates dialog overlay, can be used to close dialog</td>
+                </tr>
+                <tr>
+                    <td>dialog-surface</td>
+                    <td>Required ! Contains dialog title, dialog content and dialog actions</td>
+                </tr>
+                <tr>
+                    <td>dialog--width-auto</td>
+                    <td>Positions dialog to take only required width</td>
+                </tr>
+                <tr>
+                    <td>dialog--top-sheet</td>
+                    <td>Converts dialog into a top sheet</td>
+                </tr>
+                <tr>
+                    <td>dialog--bottom-sheet</td>
+                    <td>Converts dialog into a bottom sheet</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <h6 class="h5-fluid">Next..</h6>
+        <section class="row row-next row--persistent">
+            
+
+<article class="col col-sm-4">
+    <div class="card waves-effect card-next hoverable" v-bind:class="{'bg-dark': vDark}">
+        <a href="https://matcss.com/components/divider.html">
+            <div class="card-section">
+                <i class="material-icons icon" :class="{'text-light': vDark}">widgets</i>
+                <span class="space-left--xs" :class="{'text-light': vDark}">Divider</span>
+            </div>
+        </a>
+    </div>
+</article>
+
+
+            
+
+<article class="col col-sm-4">
+    <div class="card waves-effect card-next hoverable" v-bind:class="{'bg-dark': vDark}">
+        <a href="https://matcss.com/components/drawer.html">
+            <div class="card-section">
+                <i class="material-icons icon" :class="{'text-light': vDark}">widgets</i>
+                <span class="space-left--xs" :class="{'text-light': vDark}">Drawer</span>
+            </div>
+        </a>
+    </div>
+</article>
+
+
+            
+
+<article class="col col-sm-4">
+    <div class="card waves-effect card-next hoverable" v-bind:class="{'bg-dark': vDark}">
+        <a href="https://matcss.com/components/dialog.html">
+            <div class="card-section">
+                <i class="material-icons icon" :class="{'text-light': vDark}">widgets</i>
+                <span class="space-left--xs" :class="{'text-light': vDark}">Dialog</span>
+            </div>
+        </a>
+    </div>
+</article>
+
+
+        </section>
+
+    </article>
+</section>
+
+      
+      
+<footer class="footer row" id="site-footer">
+    <section class="col text-center">
+        <p class="text-fluid" style="margin-bottom: 0.25rem" itemprop="articleBody">
+        MatCSS is a modern and responsive CSS framework based on <a :class="{'text-light': vDark}" href="https://material.io/">Material design</a>.
+        </p>
+        <span>Made with <i class="material-icons icon text-red">favorite</i> by Faheem Nawaz</span>.
+        <br />
+        </section>
+</footer>
+    
+    </main>
+    
+    <button type="button" id="btnTop" class="btn pos-fixed pos--bottom-right btn--floating waves-effect waves-light">
+        <i class="material-icons">keyboard_arrow_up</i>
+    </button>
+
+    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
+<script src="../js//main.js"></script>
+    
+
+<script>
+    CM.toggleExpansionPanel('#cc', true);
+    app.activateLink('Dialog');
+
+    var Dialog = (function (doc) {
+        return function (dialogId) {
+            doc.querySelector('html').classList.toggle('no-scroll');
+            var id = setTimeout(function () {
+                doc.querySelector(dialogId).classList.toggle('is-active');
+                doc.querySelector(dialogId).querySelector('.overlay').classList.add('overlay--animated');
+                doc.querySelector(dialogId).querySelector('.overlay').classList.toggle('is-active');
+                console.log("Hello World");
+                //clearTimeout(id);
+            },0);
+        }
+    })(document);
+
+    var listItems = CM.$$('#dialogWithControls .list-item');
+    Array.from(listItems).forEach(function (l) {
+        l.addEventListener('click', onListItemClick);
+    });
+
+    function onListItemClick() {
+        this.querySelector('input').checked = !this.querySelector('input').checked;
+    }
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Webpage",
+        "url": "https://amp.dev/documentation/guides-and-tutorials/optimize-and-measure/discovery ",
+        "name": "amp.dev",
+        "headline": "Material Design Avatars - CSS Framework",
+        "description": "Avatars are used to display images. They are used within other elements and can also contain text and icons",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://MatCSS"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "MatCSS",
+            "logo": {
+                "url": "",
+                "width": 512,
+                "height": 512,
+                "@type": "ImageObject"
+            }
+        },
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://amp.dev/static/img/sharing/docs-guide-600x314.png",
+            "width": 600,
+            "height": 314
+        }
+    }
+</script>
+
+
+  </body>
+</html>

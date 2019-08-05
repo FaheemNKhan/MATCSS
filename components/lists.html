@@ -1,0 +1,1032 @@
+<html lang="en">
+  
+  <head>
+    
+<title>Avatar | MatCSS: An advanced and responsive CSS framework based on Material Design</title>
+<meta name="description"
+    content="List component for CSS3Material Framework. It can be used to display images or text" />
+<meta property="og:url" content="/components/lists.html" />
+<meta property="og:title" content="List Component — MatCSS framework" />
+<meta property="og:description" content="List component for MatCSS framework">
+<meta name="keywords" content="List, pure css List, material design List" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="List Component —  framework" />
+<link rel="canonical" href="https://MatCSS.com/components/lists.html" />
+<style>
+    #dark .divider {
+        background: #777
+    }
+</style>
+
+    
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="index, follow" />
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="author" content="Faheem Nawaz" />
+<meta name="web-author" content="Faheem Nawaz" />
+<meta content="on" http-equiv="cleartype" />
+<meta name="site_name" content="Docs" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<link rel="stylesheet" href="../css/main.css" />
+<link rel="stylesheet" href="../css/custom.css" />
+<link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16" />
+  </head>
+  <body>
+    <main id="site-wrapper" itemscope itemtype="http://schema.org/Article">
+      
+
+
+
+
+
+
+
+
+
+<aside class="drawer site-sidenav scrollbar f-active" v-bind:class="{'is-active': vDrawerActive}" id="site-drawer">
+    <div class="drawer-header flex flex--align-center flex--justify-center drawer-header--sm flex--dir-col">
+        <div class="show-md-and-down" style="display: none">
+            <img src="../../images/logo.png" class="toolbar-logo" alt="" />
+        </div>
+    </div>
+    <ul class="list list--drawer list--dense">
+        <li class="list-item">
+            <i class="material-icons icon list-item-start">house</i>
+            <a href="https://www.css3material.com/" class="list-item-detail">
+                <span class="list-item-title">Home</span>
+            </a>
+        </li>
+        <li class="list-item">
+            <i class="material-icons icon list-item-start">flash_on</i>
+            <a href="https://www.css3material.com/gettingstarted.com" class="list-item-detail">
+                <span class="list-item-title">Getting Started</span>
+            </a>
+        </li>
+        <li>
+            <ul class="expansion-panel smooth list list--dense">
+                <div class="expansion-panel-header list-item" id="al">
+                    <i class="material-icons icon list-item-start">layers</i>
+                    <span class="list-item-detail">
+                        <span class="list-item-title">Application Layout</span>
+                    </span>
+                    <span class="list-item-end material-icons arrow">keyboard_arrow_down</span>
+                </div>
+                <div class="expansion-panel-body">
+                    <ul class="list list-nested list--dense">
+                        
+                        <li class="list-item">
+                            <a href="https://www.css3material.com/layout/columns.html" class="list-item-detail">
+                                <span class="list-item-title"> Columns</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item">
+                            <a href="https://www.css3material.com/layout/elevation.html" class="list-item-detail">
+                                <span class="list-item-title"> Elevation</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item">
+                            <a href="https://www.css3material.com/layout/footer.html" class="list-item-detail">
+                                <span class="list-item-title"> Footer</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item">
+                            <a href="https://www.css3material.com/layout/hero.html" class="list-item-detail">
+                                <span class="list-item-title"> Hero</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </ul>
+        </li>
+        <li>
+            <ul class="expansion-panel smooth list list--dense">
+                <div class="expansion-panel-header list-item" id="cc">
+                    <i class="material-icons icon list-item-start">widgets</i>
+                    <span class="list-item-detail">
+                        <span class="list-item-title">Core Components</span>
+                    </span>
+                    <span class="list-item-end material-icons arrow">keyboard_arrow_down</span>
+                </div>
+                <div class="expansion-panel-body">
+                    <ul class="list list-nested list--dense">
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/avatar.html" class="list-item-detail">
+                                <span class="list-item-title">Avatar</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/badge.html" class="list-item-detail">
+                                <span class="list-item-title">Badge</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/banner.html" class="list-item-detail">
+                                <span class="list-item-title">Banner</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/bottom navigation.html" class="list-item-detail">
+                                <span class="list-item-title">Bottom Navigation</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/breadcrumb.html" class="list-item-detail">
+                                <span class="list-item-title">Breadcrumb</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/button.html" class="list-item-detail">
+                                <span class="list-item-title">Button</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/card.html" class="list-item-detail">
+                                <span class="list-item-title">Card</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/chip.html" class="list-item-detail">
+                                <span class="list-item-title">Chip</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/dialog.html" class="list-item-detail">
+                                <span class="list-item-title">Dialog</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/divider.html" class="list-item-detail">
+                                <span class="list-item-title">Divider</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/drawer.html" class="list-item-detail">
+                                <span class="list-item-title">Drawer</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/empty state.html" class="list-item-detail">
+                                <span class="list-item-title">Empty State</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/expansion panel.html" class="list-item-detail">
+                                <span class="list-item-title">Expansion Panel</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/lists.html" class="list-item-detail">
+                                <span class="list-item-title">Lists</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/menu.html" class="list-item-detail">
+                                <span class="list-item-title">Menu</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/messages.html" class="list-item-detail">
+                                <span class="list-item-title">Messages</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/pagination.html" class="list-item-detail">
+                                <span class="list-item-title">Pagination</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/progress.html" class="list-item-detail">
+                                <span class="list-item-title">Progress</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/snackbar.html" class="list-item-detail">
+                                <span class="list-item-title">Snackbar</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/table.html" class="list-item-detail">
+                                <span class="list-item-title">Table</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/tab.html" class="list-item-detail">
+                                <span class="list-item-title">Tab</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/toolbar.html" class="list-item-detail">
+                                <span class="list-item-title">Toolbar</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/tooltip.html" class="list-item-detail">
+                                <span class="list-item-title">Tooltip</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </ul>
+        </li>
+        <li>
+            <ul class="expansion-panel smooth list list--dense">
+                <div class="expansion-panel-header list-item" id="effects">
+                    <i class="material-icons icon list-item-start">style</i>
+                    <span class="list-item-detail">
+                        <span class="list-item-title">Effects</span>
+                    </span>
+                    <span class="list-item-end material-icons arrow">keyboard_arrow_down</span>
+                </div>
+                <div class="expansion-panel-body">
+                    <ul class="list list-nested list--dense">
+                        
+                        <li class="list-item">
+                            <a href="https://www.css3material.com/components/images.html" class="list-item-detail">
+                                <span class="list-item-title">Images</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item">
+                            <a href="https://www.css3material.com/components/media.html" class="list-item-detail">
+                                <span class="list-item-title">Media</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item">
+                            <a href="https://www.css3material.com/components/ripple.html" class="list-item-detail">
+                                <span class="list-item-title">Ripple</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </ul>
+        </li>
+        <li>
+            <ul class="expansion-panel smooth list list--dense">
+                <div class="expansion-panel-header list-item" id="forms">
+                    <i class="material-icons icon list-item-start">file_copy</i>
+                    <span class="list-item-detail">
+                       <span class="list-item-title">Forms</span>
+                    </span>
+                    <span class="list-item-end material-icons arrow">keyboard_arrow_down</span>
+                </div>
+                <div class="expansion-panel-body">
+                    <ul class="list list-nested list--dense">
+                        
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/forms/checkbox.html" class="list-item-detail">
+                                <span class="list-item-title">Checkbox</span>
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/forms/file.html" class="list-item-detail">
+                                <span class="list-item-title">File</span>
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/forms/radio.html" class="list-item-detail">
+                                <span class="list-item-title">Radio</span>
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/forms/range.html" class="list-item-detail">
+                                <span class="list-item-title">Range</span>
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/forms/select.html" class="list-item-detail">
+                                <span class="list-item-title">Select</span>
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/forms/switch.html" class="list-item-detail">
+                                <span class="list-item-title">Switch</span>
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/forms/textfields.html" class="list-item-detail">
+                                <span class="list-item-title">Textfield &amp; Textarea</span>
+                            </a>
+                        </li>
+                        
+                        
+                    </ul>
+                </div>
+            </ul>
+        </li>
+        <li>
+            <ul class="expansion-panel smooth list list--dense">
+                <div class="expansion-panel-header list-item" id="utils">
+                    <i class="material-icons icon list-item-start">touch_app</i>
+                    <span class="list-item-detail">
+                        <span class="list-item-title">Utilities</span>
+                    </span>
+                    <span class="list-item-end material-icons arrow">keyboard_arrow_down</span>
+                </div>
+                <div class="expansion-panel-body">
+                    <ul class="list list-nested list--dense">
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/utilities/colors.html" class="list-item-detail">
+                                <span class="list-item-title">Colors</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/utilities/cursor.html" class="list-item-detail">
+                                <span class="list-item-title">Cursor</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/utilities/positioning.html" class="list-item-detail">
+                                <span class="list-item-title">Positioning</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/utilities/shapes.html" class="list-item-detail">
+                                <span class="list-item-title">Shapes</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/utilities/text.html" class="list-item-detail">
+                                <span class="list-item-title">Text</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </ul>
+        </li>
+        <li class="list-item">
+            <i class="material-icons icon list-item-start">format_align_right</i>
+            <a href="https://www.css3material.com/typography.html" class="list-item-detail">
+                <span class="list-item-title">Typography</span>
+            </a>
+        </li>
+    </ul>
+</aside>
+<div class="overlay" v-bind:class="{'is-active': vDrawerActive}" id="site-drawer-overlay"
+    @click="vDrawerActive = !vDrawerActive"></div>
+      
+      
+<header id="site-toolbar" class="toolbar z-elevation-4 toolbar--persistent">
+    <div class="toolbar-brand">
+        <div style="display: none" class="show-md-and-up">
+            <img src="../../images/logo.png" class="toolbar-logo" alt="" />
+        </div>
+        <div class="show-md-and-down" style="display: none">
+            <i class="material-icons text-dark space-right--sm icon" v-bind:class="{'text-light': vDark}" @click="vDrawerActive = !vDrawerActive">menu</i>
+        </div>
+        <a href="https://MatCSS" class="" v-bind:class="{'text-light': vDark}">MatCSS</a>
+    </div>
+
+    <div class="toolbar-section toolbar-section--visible">
+        <ul class="toolbar-section-right">
+            <li class="toolbar-item">
+                <i class="material-icons icon space-right--sm text-dark" @click="toggleTheme" v-bind:class="{'text-light': vDark}">invert_colors</i>
+            </li>
+        </ul>
+    </div>
+</header>
+    
+      
+<section class="row row-centered">
+    <article class="col">
+
+        <h1 class="h1-fluid" itemprop="name">Lists</h1>
+        <hr />
+        <ul class="list-reset list-doc">
+            <li><a href="#usage" title="Lists - Usage"><strong>Usage</strong></a></li>
+            <li><a href="#multiline" title="Lists - Multi Line"><strong>Multi Line Lists</strong></a></li>
+            <li><a href="#formcontrols" title="Lists - With Form Controls"><strong>Lists with Form Controls</strong></a>
+            </li>
+            <li><a href="#classes" title="Classes Explanation"><strong>CSS Classes explanation</strong></a></li>
+        </ul>
+
+        <h2 class="h5-fluid" id="usage">Usage</h2>
+
+        <p class="text-fluid" itemprop="articleBody">
+            Lists are awesome..
+        </p>
+
+        <ul class="list width-fluid bs-2" style="width: 400px" :class="{'bg-dark': vDark}">
+            <li class="list-item waves-effect">
+                <div class="material-icons icon list-item-start">wifi</div>
+                <span class="list-item-detail">
+                    <span class="list-item-title">Wifi</span>
+                </span>
+            </li>
+            <li class="list-item waves-effect">
+                <div class="material-icons icon list-item-start">bluetooth</div>
+                <span class="list-item-detail">
+                    <span class="list-item-title">Bluetooth</span>
+                </span>
+            </li>
+            <li class="list-item waves-effect is-disabled">
+                <div class="material-icons icon list-item-start">bookmarks</div>
+                <span class="list-item-detail">
+                    <span class="list-item-title">Bookmark</span>
+                </span>
+            </li>
+        </ul>
+
+        <pre class="f-code"><bc></bc>
+<code class="language-html">&lt;ul class="list"&gt;
+    &lt;li class="list-item"&gt;
+        &lt;span class="list-item-start material-icons icon"&gt;wifi&lt;/span&gt;
+        &lt;span class="list-item-detail"&gt;
+            &lt;span class="list-item-title"&gt;Wifi&lt;/span&gt;
+        &lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class="list-item"&gt;
+        &lt;span class="list-item-start material-icons icon"&gt;bluetooth&lt;/span&gt;
+        &lt;span class="list-item-detail"&gt;
+            &lt;span class="list-item-title"&gt;Bluetooth&lt;/span&gt;
+        &lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class="list-item is-disabled"&gt;
+        &lt;span class="list-item-start material-icons icon"&gt;bookmarks&lt;/span&gt;
+        &lt;span class="list-item-detail"&gt;
+            &lt;span class="list-item-title"&gt;Bookmark&lt;/span&gt;
+        &lt;/span&gt;
+    &lt;/li&gt;
+ &lt;/ul&gt;
+</code>
+</pre>
+
+        <h4 class="h5-fluid" id="multiline">Multi Line Lists</h4>
+
+        <p class="text-fluid">
+            Lists can contain multiple lines of text.
+        </p>
+
+        <ul class="list width-fluid bs-2 list--two-line" style="width: 400px" :class="{'bg-dark': vDark}">
+            <li class="list-item waves-effect">
+                <div class="avatar list-item-start">
+                    <img src="images/avatar1.svg" alt="" />
+                </div>
+                <span class="list-item-detail">
+                    <span class="list-item-title">User 1</span>
+                    <span class="list-item-subtitle">supporting message text</span>
+                </span>
+            </li>
+            <hr class="divider divider--inset" />
+            <li class="list-item waves-effect">
+                <div class="avatar list-item-start">
+                    <img src="images/avatar2.svg" alt="" />
+                </div>
+                <span class="list-item-detail">
+                    <span class="list-item-title">User 2</span>
+                    <span class="list-item-subtitle">supporting message text</span>
+                </span>
+            </li>
+            <hr class="divider divider--inset" />
+            <li class="list-item waves-effect">
+                <div class="avatar list-item-start">
+                    <img src="images/avatar5.svg" alt="" />
+                </div>
+                <span class="list-item-detail">
+                    <span class="list-item-title">User 3</span>
+                    <span class="list-item-subtitle">supporting message text</span>
+                </span>
+                <span class="list-item-end">
+                    <span class="badge bg-success">2</span>
+                </span>
+            </li>
+        </ul>
+
+        <pre class="f-code"><bc></bc>
+<code class="language-html">&lt;ul class="list list--two-line"&gt;
+    &lt;li class="list-item"&gt;
+        &lt;span class="list-item-start avatar"&gt;
+            &lt;img src="avatarPath" alt="Alt Text" /&gt;
+        &lt;/span&gt;
+        &lt;span class="list-item-detail"&gt;
+            &lt;span class="list-item-title"&gt;User 1&lt;/span&gt;
+            &lt;span class="list-item-subtitle"&gt;supporting message text..&lt;/span&gt;
+        &lt;/span&gt;
+    &lt;/li&gt;
+    &lt;hr class="divider divider--inset" /&gt;
+    &lt;li class="list-item"&gt;
+        &lt;span class="avatar list-item-start"&gt;
+            &lt;img src="avatarPath" alt="Alt Text" /&gt;
+        &lt;/span&gt;
+        &lt;span class="list-item-detail"&gt;
+            &lt;span class="list-item-title"&gt;User 2&lt;/span&gt;
+            &lt;span class="list-item-subtitle"&gt;supporting message text..&lt;/span&gt;
+        &lt;/span&gt;
+    &lt;/li&gt;
+    &lt;hr class="divider divider--inset" /&gt;
+    &lt;li class="list-item"&gt;
+        &lt;span class="avatar list-item-start"&gt;
+            &lt;img src="avatarPath" alt="Alt Text" /&gt;
+        &lt;/span&gt;
+        &lt;span class="list-item-detail"&gt;
+            &lt;span class="list-item-title"&gt;User 3&lt;/span&gt;
+            &lt;span class="list-item-subtitle"&gt;supporting message text..&lt;/span&gt;
+        &lt;/span&gt;
+        &lt;span class="list-item-end"&gt;
+            &lt;span class="badge bg-success"&gt;2&lt;/span&gt;
+        &lt;/span&gt;
+    &lt;/li&gt;
+ &lt;/ul&gt;
+</code>
+</pre>
+
+        <p class="text-fluid" itemprop="articelBody">
+            Use <mark class="f-c">list--three-line</mark> to add more text to the list item.
+        </p>
+
+        <ul class="list list--three-line bs-2 width-fluid" style="width: 400px" :class="{'bg-dark': vDark}">
+            <li class="list-item waves-effect">
+                <span class="list-item-start avatar">
+                    <img src="../../images//avatar1.svg" alt="MatCSS - CSS Material Framework" />
+                </span>
+                <span class="list-item-detail">
+                    <span class="list-item-title">User 1</span>
+                    <span class="list-item-subtitle">supporting message text..</span>
+                    <span class="list-item-subtitle">supporting message text..</span>
+                </span>
+            </li>
+            <hr class="divider divider--inset" />
+            <li class="list-item waves-effect">
+                <span class="avatar list-item-start">
+                    <img src="../../images//avatar6.svg" alt="MatCSS - CSS Material Framework" />
+                </span>
+                <span class="list-item-detail">
+                    <span class="list-item-title">User 2</span>
+                    <span class="list-item-subtitle">supporting message text..</span>
+                    <span class="list-item-subtitle">supporting message text..</span>
+                </span>
+            </li>
+        </ul>
+
+        <pre class="f-code"><bc></bc>
+<code class="language-html">&lt;ul class="list list--three-line"&gt;
+    &lt;li class="list-item"&gt;
+        &lt;span class="list-item-start avatar"&gt;
+            &lt;img src="avatarPath" alt="Alt Text" /&gt;
+        &lt;/span&gt;
+        &lt;span class="list-item-detail"&gt;
+            &lt;span class="list-item-title"&gt;User 1&lt;/span&gt;
+            &lt;span class="list-item-subtitle"&gt;supporting message text..&lt;/span&gt;
+            &lt;span class="list-item-subtitle"&gt;supporting message text..&lt;/span&gt;
+        &lt;/span&gt;
+    &lt;/li&gt;
+    &lt;hr class="divider divider--inset" /&gt;
+    &lt;li class="list-item"&gt;
+        &lt;span class="avatar list-item-start"&gt;
+            &lt;img src="avatarPath" alt="Alt Text" /&gt;
+        &lt;/span&gt;
+        &lt;span class="list-item-detail"&gt;
+            &lt;span class="list-item-title"&gt;User 2&lt;/span&gt;
+            &lt;span class="list-item-subtitle"&gt;supporting message text..&lt;/span&gt;
+            &lt;span class="list-item-subtitle"&gt;supporting message text..&lt;/span&gt;
+        &lt;/span&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</code>
+</pre>
+
+
+        <h4 class="h5-fluid" id="formcontrols" itemprop="articleName">Lists with Form Control</h4>
+
+        <p class="text-fluid" itemprop="articleBody">
+            You can easily add checkboxes, radio buttons, and switches to either start or end
+            of list items.
+        </p>
+
+        <button type="button" :class="{'btn--outlined': vDark}" class="btn btn--raised waves-effect"
+            @click="toggleListsControls">toggle sides</button>
+
+        <section class="row space-top--sm">
+            <article class="col" style="padding: 8px 0">
+                <ul class="list list--two-line bs-2 with-controls" :class="{'bg-dark': vDark}">
+                    <li class="list-item waves-effect">
+                        <span class="list-item-start" v-if="toggleSide">
+                            <label for="c1" class="form-checkbox">
+                                <input type="checkbox" id="c1" />
+                                <span class="form-check"></span>
+                            </label>
+                        </span>
+                        <span class="list-item-detail">
+                            <span class="list-item-title">Mobile Data</span>
+                            <span class="list-item-subtitle">Turn on mobile data such as email, and web</span>
+                        </span>
+                        <span class="list-item-end" v-if="!toggleSide">
+                            <label for="c1" class="form-checkbox">
+                                <input type="checkbox" id="c1" />
+                                <span class="form-check"></span>
+                            </label>
+                        </span>
+                    </li>
+                    <hr class="divider divider--justified" />
+                    <li class="list-item waves-effect">
+                        <span class="list-item-start" v-if="toggleSide">
+                            <label for="c2" class="form-checkbox">
+                                <input type="checkbox" id="c2" />
+                                <span class="form-check"></span>
+                            </label>
+                        </span>
+                        <span class="list-item-detail">
+                            <span class="list-item-title">Enhanced LTE Services</span>
+                            <span class="list-item-subtitle">Turn on HD Voice and advanced communication</span>
+                        </span>
+                        <span class="list-item-end" v-if="!toggleSide">
+                            <label for="c2" class="form-checkbox">
+                                <input type="checkbox" id="c2" />
+                                <span class="form-check"></span>
+                            </label>
+                        </span>
+                    </li>
+                </ul>
+            </article>
+            <article class="col" style="padding: 8px 0 8px 8px">
+                <ul class="list list--two-line bs-2 with-controls" :class="{'bg-dark': vDark}">
+                    <li class="list-item waves-effect">
+                        <span class="list-item-start" v-if="toggleSide">
+                            <label for="c3" class="form-switch">
+                                <input type="checkbox" id="c3" />
+                                <span class="form-switch-thumb"></span>
+                            </label>
+                        </span>
+                        <span class="list-item-detail">
+                            <span class="list-item-title">Mobile Data</span>
+                            <span class="list-item-subtitle">Turn on mobile data such as email, and web</span>
+                        </span>
+                        <span class="list-item-end" v-if="!toggleSide">
+                            <label for="c3" class="form-switch">
+                                <input type="checkbox" id="c3" />
+                                <span class="form-switch-thumb"></span>
+                            </label>
+                        </span>
+                    </li>
+                    <hr class="divider divider--justified" />
+                    <li class="list-item waves-effect">
+                        <span class="list-item-start" v-if="toggleSide">
+                            <label for="c4" class="form-switch">
+                                <input type="checkbox" id="c4" />
+                                <span class="form-switch-thumb"></span>
+                            </label>
+                        </span>
+                        <span class="list-item-detail">
+                            <span class="list-item-title">Enhanced LTE Services</span>
+                            <span class="list-item-subtitle">Turn on HD Voice and advanced communication</span>
+                        </span>
+                        <span class="list-item-end" v-if="!toggleSide">
+                            <label for="c4" class="form-switch">
+                                <input type="checkbox" id="c4" />
+                                <span class="form-switch-thumb"></span>
+                            </label>
+                        </span>
+                    </li>
+                </ul>
+            </article>
+            <article class="col" style="padding: 8px 0">
+                <ul class="list bs-2 width-fluid with-controls" :class="{'bg-dark': vDark}">
+                    <li class="list-item waves-effect">
+                        <span class="list-item-start" v-if="toggleSide">
+                            <label for="r1" class="form-radio">
+                                <input type="radio" id="r1" name="rn2" />
+                                <span class="form-radio-thumb"></span>
+                            </label>
+                        </span>
+                        <span class="list-item-detail">
+                            <span class="list-item-title">Mobile Data</span>
+                        </span>
+                        <span class="list-item-end" v-if="!toggleSide">
+                            <label for="r1" class="form-radio">
+                                <input type="radio" id="r1" name="rn1" />
+                                <span class="form-radio-thumb"></span>
+                            </label>
+                        </span>
+                    </li>
+                    <hr class="divider divider--justified" />
+                    <li class="list-item waves-effect">
+                        <span class="list-item-start" v-if="toggleSide">
+                            <label for="r2" class="form-radio">
+                                <input type="radio" id="r2" name="rn2" />
+                                <span class="form-radio-thumb"></span>
+                            </label>
+                        </span>
+                        <span class="list-item-detail">
+                            <span class="list-item-title">Enhanced LTE Services</span>
+                        </span>
+                        <span class="list-item-end" v-if="!toggleSide">
+                            <label for="r2" class="form-radio">
+                                <input type="radio" id="r2" name="rn1" />
+                                <span class="form-radio-thumb"></span>
+                            </label>
+                        </span>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <pre class="f-code"><bc></bc>
+<code class="language-html">// For Checkbox
+ &lt;ul class="list list--two-line"&gt;
+    &lt;li class="list-item"&gt;
+        &lt;span class="list-item-detail"&gt;
+            &lt;span class="list-item-title"&gt;Mobile Data&lt;/span&gt;
+            &lt;span class="list-item-subtitle"&gt;Turn on mobile data such as email, and web&lt;/span&gt;
+        &lt;/span&gt;
+        &lt;span class="list-item-end"&gt;
+            &lt;label for="cb1" class="form-checkbox"&gt;
+                &lt;input type="checkbox" id="cb1" /&gt;
+                &lt;span class="form-check"&gt;&lt;/span&gt;
+            &lt;/label&gt;
+        &lt;/span&gt;
+    &lt;/li&gt;
+    &lt;hr class="divider divider--justified" /&gt;
+    &lt;li class="list-item"&gt;
+        ..
+    &lt;/li&gt;
+ &lt;/ul&gt;
+ 
+ // For Switch
+ &lt;ul class="list list--two-line"&gt;
+    &lt;li class="list-item"&gt;
+        &lt;span class="list-item-detail"&gt;
+            &lt;span class="list-item-title"&gt;Mobile Data&lt;/span&gt;
+            &lt;span class="list-item-subtitle"&gt;Turn on mobile data such as email, and web&lt;/span&gt;
+        &lt;/span&gt;
+        &lt;span class="list-item-end"&gt;
+            &lt;label for="sw1" class="form-switch"&gt;
+                &lt;input type="checkbox" id="sw1" /&gt;
+                &lt;span class="form-switch-thumb"&gt;&lt;/span&gt;
+            &lt;/label&gt;
+        &lt;/span&gt;
+    &lt;/li&gt;
+    &lt;hr class="divider divider--justified" /&gt;
+    &lt;li class="list-item"&gt;
+        ..
+    &lt;/li&gt;
+ &lt;/ul&gt;
+ 
+ // For Radio Button
+ &lt;ul class="list"&gt;
+    &lt;li class="list-item"&gt;
+        &lt;span class="list-item-detail"&gt;
+            &lt;span class="list-item-title"&gt;Mobile Data&lt;/span&gt;
+        &lt;/span&gt;
+        &lt;span class="list-item-end"&gt;
+            &lt;label for="rb1" class="form-radio"&gt;
+                &lt;input type="radio" id="rb1" /&gt;
+                &lt;span class="form-radio-thumb"&gt;&lt;/span&gt;
+            &lt;/label&gt;
+        &lt;/span&gt;
+    &lt;/li&gt;
+    &lt;hr class="divider divider--justified" /&gt;
+    &lt;li class="list-item"&gt;
+        ..
+    &lt;/li&gt;
+ &lt;/ul&gt;
+</code>
+</pre>
+
+        <h5 class="h5-fluid" id="classes">Classes Details</h5>
+        <table class="table--bordered table--responsive">
+            <thead>
+                <tr>
+                    <th>CSS Class</th>
+                    <th>Explanation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>list</td>
+                    <td>Container for all list content</td>
+                </tr>
+                <tr>
+                    <td data-n>list-item</td>
+                    <td>Contains icon, avatar, text and list actions</td>
+                </tr>
+                <tr>
+                    <td data-nn>list-item-start</td>
+                    <td>Leading icon or avatar</td>
+                </tr>
+                <tr>
+                    <td data-nn>list-item-detail</td>
+                    <td>Text wrapper</td>
+                </tr>
+                <tr>
+                    <td data-nnn>list-item-title, .title</td>
+                    <td>List primary text</td>
+                </tr>
+                <tr>
+                    <td data-nnn>list-item-subtitle, .subtitle1, .subtitle2</td>
+                    <td>List secondary text</td>
+                </tr>
+                <tr>
+                    <td data-nn>list-item-end</td>
+                    <td>List actions</td>
+                </tr>
+                <tr>
+                    <td data-n>is-active</td>
+                    <td>Activates list item</td>
+                </tr>
+                <tr>
+                    <td data-n>is-disabled</td>
+                    <td>Disables list item</td>
+                </tr>
+                <tr>
+                    <td>list--dense</td>
+                    <td>Dense list</td>
+                </tr>
+                <tr>
+                    <td>list--drawer</td>
+                    <td>Styling for navigation drawer list</td>
+                </tr>
+                <tr>
+                    <td>list--two-line</td>
+                    <td>Double line list</td>
+                </tr>
+                <tr>
+                    <td>list--three-line</td>
+                    <td>Triple line list</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+
+        <h6 class="h5-fluid">Next..</h6>
+        <section class="row row-next">
+            
+
+<article class="col col-sm-4">
+    <div class="card waves-effect card-next hoverable" v-bind:class="{'bg-dark': vDark}">
+        <a href="https://matcss.com/components/menu.html">
+            <div class="card-section">
+                <i class="material-icons icon" :class="{'text-light': vDark}">widgets</i>
+                <span class="space-left--xs" :class="{'text-light': vDark}">Menu</span>
+            </div>
+        </a>
+    </div>
+</article>
+
+
+            
+
+<article class="col col-sm-4">
+    <div class="card waves-effect card-next hoverable" v-bind:class="{'bg-dark': vDark}">
+        <a href="https://matcss.com/components/messages.html">
+            <div class="card-section">
+                <i class="material-icons icon" :class="{'text-light': vDark}">widgets</i>
+                <span class="space-left--xs" :class="{'text-light': vDark}">Messages</span>
+            </div>
+        </a>
+    </div>
+</article>
+
+
+            
+
+<article class="col col-sm-4">
+    <div class="card waves-effect card-next hoverable" v-bind:class="{'bg-dark': vDark}">
+        <a href="https://matcss.com/components/pagination.html">
+            <div class="card-section">
+                <i class="material-icons icon" :class="{'text-light': vDark}">widgets</i>
+                <span class="space-left--xs" :class="{'text-light': vDark}">Pagination</span>
+            </div>
+        </a>
+    </div>
+</article>
+
+
+        </section>
+
+    </article>
+</section>
+
+      
+      
+<footer class="footer row" id="site-footer">
+    <section class="col text-center">
+        <p class="text-fluid" style="margin-bottom: 0.25rem" itemprop="articleBody">
+        MatCSS is a modern and responsive CSS framework based on <a :class="{'text-light': vDark}" href="https://material.io/">Material design</a>.
+        </p>
+        <span>Made with <i class="material-icons icon text-red">favorite</i> by Faheem Nawaz</span>.
+        <br />
+        </section>
+</footer>
+    
+    </main>
+    
+    <button type="button" id="btnTop" class="btn pos-fixed pos--bottom-right btn--floating waves-effect waves-light">
+        <i class="material-icons">keyboard_arrow_up</i>
+    </button>
+
+    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
+<script src="../js//main.js"></script>
+    
+
+<script>
+    CM.toggleExpansionPanel('#cc', true);
+    app.activateLink('Lists');
+
+    var listItems = CM.$$('.with-controls .list-item');
+    Array.from(listItems).forEach(function (l) {
+        l.addEventListener('click', onListItemClick);
+    });
+
+    function onListItemClick() {
+        this.querySelector('input').checked = !this.querySelector('input').checked;
+    }
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Webpage",
+        "url": "https://amp.dev/documentation/guides-and-tutorials/optimize-and-measure/discovery ",
+        "name": "amp.dev",
+        "headline": "Material Design Avatars - CSS Framework",
+        "description": "Avatars are used to display images. They are used within other elements and can also contain text and icons",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://MatCSS"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "MatCSS",
+            "logo": {
+                "url": "",
+                "width": 512,
+                "height": 512,
+                "@type": "ImageObject"
+            }
+        },
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://amp.dev/static/img/sharing/docs-guide-600x314.png",
+            "width": 600,
+            "height": 314
+        }
+    }
+</script>
+
+
+  </body>
+</html>

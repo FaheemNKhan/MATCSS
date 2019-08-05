@@ -1,0 +1,774 @@
+<html lang="en">
+  
+  <head>
+    
+<title>Snackbar | MatCSS, a CSS framework based on Material Design</title>
+<meta name="description"
+    content="Snackbar component for CSS3Material Framework. It can be used to display images or text" />
+<meta property="og:url" content="components/.html" />
+<meta property="og:title" content="Snackbar Component — MatCSS framework" />
+<meta property="og:description" content="Snackbar component for MatCSS framework">
+<meta name="keywords" content="Snackbar, pure css Snackbar, material design Snackbar" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Snackbar Component —  framework" />
+<link rel="canonical" href="https://matcss.com/components/snackbar.html" />
+<style>
+#dark .snackbar-surface {
+    background: #2C3531
+}
+@media (max-width: 600px){
+    #demo .snackbar-surface {
+        border-radius: 4px;
+        box-shadow: 0 2px 3px #777
+    }
+}
+</style>
+
+    
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="index, follow" />
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="author" content="Faheem Nawaz" />
+<meta name="web-author" content="Faheem Nawaz" />
+<meta content="on" http-equiv="cleartype" />
+<meta name="site_name" content="Docs" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<link rel="stylesheet" href="../css/main.css" />
+<link rel="stylesheet" href="../css/custom.css" />
+<link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16" />
+  </head>
+  <body>
+    <main id="site-wrapper" itemscope itemtype="http://schema.org/Article">
+      
+
+
+
+
+
+
+
+
+
+<aside class="drawer site-sidenav scrollbar f-active" v-bind:class="{'is-active': vDrawerActive}" id="site-drawer">
+    <div class="drawer-header flex flex--align-center flex--justify-center drawer-header--sm flex--dir-col">
+        <div class="show-md-and-down" style="display: none">
+            <img src="../../images/logo.png" class="toolbar-logo" alt="" />
+        </div>
+    </div>
+    <ul class="list list--drawer list--dense">
+        <li class="list-item">
+            <i class="material-icons icon list-item-start">house</i>
+            <a href="https://www.css3material.com/" class="list-item-detail">
+                <span class="list-item-title">Home</span>
+            </a>
+        </li>
+        <li class="list-item">
+            <i class="material-icons icon list-item-start">flash_on</i>
+            <a href="https://www.css3material.com/gettingstarted.com" class="list-item-detail">
+                <span class="list-item-title">Getting Started</span>
+            </a>
+        </li>
+        <li>
+            <ul class="expansion-panel smooth list list--dense">
+                <div class="expansion-panel-header list-item" id="al">
+                    <i class="material-icons icon list-item-start">layers</i>
+                    <span class="list-item-detail">
+                        <span class="list-item-title">Application Layout</span>
+                    </span>
+                    <span class="list-item-end material-icons arrow">keyboard_arrow_down</span>
+                </div>
+                <div class="expansion-panel-body">
+                    <ul class="list list-nested list--dense">
+                        
+                        <li class="list-item">
+                            <a href="https://www.css3material.com/layout/columns.html" class="list-item-detail">
+                                <span class="list-item-title"> Columns</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item">
+                            <a href="https://www.css3material.com/layout/elevation.html" class="list-item-detail">
+                                <span class="list-item-title"> Elevation</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item">
+                            <a href="https://www.css3material.com/layout/footer.html" class="list-item-detail">
+                                <span class="list-item-title"> Footer</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item">
+                            <a href="https://www.css3material.com/layout/hero.html" class="list-item-detail">
+                                <span class="list-item-title"> Hero</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </ul>
+        </li>
+        <li>
+            <ul class="expansion-panel smooth list list--dense">
+                <div class="expansion-panel-header list-item" id="cc">
+                    <i class="material-icons icon list-item-start">widgets</i>
+                    <span class="list-item-detail">
+                        <span class="list-item-title">Core Components</span>
+                    </span>
+                    <span class="list-item-end material-icons arrow">keyboard_arrow_down</span>
+                </div>
+                <div class="expansion-panel-body">
+                    <ul class="list list-nested list--dense">
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/avatar.html" class="list-item-detail">
+                                <span class="list-item-title">Avatar</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/badge.html" class="list-item-detail">
+                                <span class="list-item-title">Badge</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/banner.html" class="list-item-detail">
+                                <span class="list-item-title">Banner</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/bottom navigation.html" class="list-item-detail">
+                                <span class="list-item-title">Bottom Navigation</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/breadcrumb.html" class="list-item-detail">
+                                <span class="list-item-title">Breadcrumb</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/button.html" class="list-item-detail">
+                                <span class="list-item-title">Button</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/card.html" class="list-item-detail">
+                                <span class="list-item-title">Card</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/chip.html" class="list-item-detail">
+                                <span class="list-item-title">Chip</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/dialog.html" class="list-item-detail">
+                                <span class="list-item-title">Dialog</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/divider.html" class="list-item-detail">
+                                <span class="list-item-title">Divider</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/drawer.html" class="list-item-detail">
+                                <span class="list-item-title">Drawer</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/empty state.html" class="list-item-detail">
+                                <span class="list-item-title">Empty State</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/expansion panel.html" class="list-item-detail">
+                                <span class="list-item-title">Expansion Panel</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/lists.html" class="list-item-detail">
+                                <span class="list-item-title">Lists</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/menu.html" class="list-item-detail">
+                                <span class="list-item-title">Menu</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/messages.html" class="list-item-detail">
+                                <span class="list-item-title">Messages</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/pagination.html" class="list-item-detail">
+                                <span class="list-item-title">Pagination</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/progress.html" class="list-item-detail">
+                                <span class="list-item-title">Progress</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/snackbar.html" class="list-item-detail">
+                                <span class="list-item-title">Snackbar</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/table.html" class="list-item-detail">
+                                <span class="list-item-title">Table</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/tab.html" class="list-item-detail">
+                                <span class="list-item-title">Tab</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/toolbar.html" class="list-item-detail">
+                                <span class="list-item-title">Toolbar</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/components/tooltip.html" class="list-item-detail">
+                                <span class="list-item-title">Tooltip</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </ul>
+        </li>
+        <li>
+            <ul class="expansion-panel smooth list list--dense">
+                <div class="expansion-panel-header list-item" id="effects">
+                    <i class="material-icons icon list-item-start">style</i>
+                    <span class="list-item-detail">
+                        <span class="list-item-title">Effects</span>
+                    </span>
+                    <span class="list-item-end material-icons arrow">keyboard_arrow_down</span>
+                </div>
+                <div class="expansion-panel-body">
+                    <ul class="list list-nested list--dense">
+                        
+                        <li class="list-item">
+                            <a href="https://www.css3material.com/components/images.html" class="list-item-detail">
+                                <span class="list-item-title">Images</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item">
+                            <a href="https://www.css3material.com/components/media.html" class="list-item-detail">
+                                <span class="list-item-title">Media</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item">
+                            <a href="https://www.css3material.com/components/ripple.html" class="list-item-detail">
+                                <span class="list-item-title">Ripple</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </ul>
+        </li>
+        <li>
+            <ul class="expansion-panel smooth list list--dense">
+                <div class="expansion-panel-header list-item" id="forms">
+                    <i class="material-icons icon list-item-start">file_copy</i>
+                    <span class="list-item-detail">
+                       <span class="list-item-title">Forms</span>
+                    </span>
+                    <span class="list-item-end material-icons arrow">keyboard_arrow_down</span>
+                </div>
+                <div class="expansion-panel-body">
+                    <ul class="list list-nested list--dense">
+                        
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/forms/checkbox.html" class="list-item-detail">
+                                <span class="list-item-title">Checkbox</span>
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/forms/file.html" class="list-item-detail">
+                                <span class="list-item-title">File</span>
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/forms/radio.html" class="list-item-detail">
+                                <span class="list-item-title">Radio</span>
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/forms/range.html" class="list-item-detail">
+                                <span class="list-item-title">Range</span>
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/forms/select.html" class="list-item-detail">
+                                <span class="list-item-title">Select</span>
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/forms/switch.html" class="list-item-detail">
+                                <span class="list-item-title">Switch</span>
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/forms/textfields.html" class="list-item-detail">
+                                <span class="list-item-title">Textfield &amp; Textarea</span>
+                            </a>
+                        </li>
+                        
+                        
+                    </ul>
+                </div>
+            </ul>
+        </li>
+        <li>
+            <ul class="expansion-panel smooth list list--dense">
+                <div class="expansion-panel-header list-item" id="utils">
+                    <i class="material-icons icon list-item-start">touch_app</i>
+                    <span class="list-item-detail">
+                        <span class="list-item-title">Utilities</span>
+                    </span>
+                    <span class="list-item-end material-icons arrow">keyboard_arrow_down</span>
+                </div>
+                <div class="expansion-panel-body">
+                    <ul class="list list-nested list--dense">
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/utilities/colors.html" class="list-item-detail">
+                                <span class="list-item-title">Colors</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/utilities/cursor.html" class="list-item-detail">
+                                <span class="list-item-title">Cursor</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/utilities/positioning.html" class="list-item-detail">
+                                <span class="list-item-title">Positioning</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/utilities/shapes.html" class="list-item-detail">
+                                <span class="list-item-title">Shapes</span>
+                            </a>
+                        </li>
+                        
+                        <li class="list-item" tabindex="0">
+                            <a href="https://www.css3material.com/utilities/text.html" class="list-item-detail">
+                                <span class="list-item-title">Text</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </ul>
+        </li>
+        <li class="list-item">
+            <i class="material-icons icon list-item-start">format_align_right</i>
+            <a href="https://www.css3material.com/typography.html" class="list-item-detail">
+                <span class="list-item-title">Typography</span>
+            </a>
+        </li>
+    </ul>
+</aside>
+<div class="overlay" v-bind:class="{'is-active': vDrawerActive}" id="site-drawer-overlay"
+    @click="vDrawerActive = !vDrawerActive"></div>
+      
+      
+<header id="site-toolbar" class="toolbar z-elevation-4 toolbar--persistent">
+    <div class="toolbar-brand">
+        <div style="display: none" class="show-md-and-up">
+            <img src="../../images/logo.png" class="toolbar-logo" alt="" />
+        </div>
+        <div class="show-md-and-down" style="display: none">
+            <i class="material-icons text-dark space-right--sm icon" v-bind:class="{'text-light': vDark}" @click="vDrawerActive = !vDrawerActive">menu</i>
+        </div>
+        <a href="https://MatCSS" class="" v-bind:class="{'text-light': vDark}">MatCSS</a>
+    </div>
+
+    <div class="toolbar-section toolbar-section--visible">
+        <ul class="toolbar-section-right">
+            <li class="toolbar-item">
+                <i class="material-icons icon space-right--sm text-dark" @click="toggleTheme" v-bind:class="{'text-light': vDark}">invert_colors</i>
+            </li>
+        </ul>
+    </div>
+</header>
+    
+      
+<section class="row row-centered">
+    <article class="col">
+
+        <h1 class="h1-fluid">Snackbar</h1>
+        <hr />
+        <ul class="list-reset list-doc">
+            <li><a href="#usage" title="Snackbar - Usage"><strong>Usage</strong></a></li>
+            <li><a href="#variations" title="Snackbar - Variations"><strong>Snackbar variations</strong></a>
+            </li>
+            <li><a href="#persistent" title="Snackbar - With Infinite Duration"><strong>Persistent
+                        Snackbar</strong></a></li>
+            <li><a href="#classes" title="Snackbar - CSS Classes explanation"><strong>CSS Classes
+                        explanation</strong></a></li>
+        </ul>
+
+
+
+        <h2 class="h5-fluid" id="usage" itemprop="name">Usage</h2>
+
+        <p class="text-fluid">
+            Snackbar is a simple popup notification for quick messages.
+            It consists of 2 components: <mark class="f-c">snackbar</mark>, <mark class="f-c">snackbar-surface</mark>,
+            and <mark class="f-c">snackbar-message</mark>,
+            <mark class="f-c">snackbar-actions</mark> which are optional.
+        </p>
+
+        <aside class="snackbar" id="demo" style="position: relative; display: inline-block; top: 0; left: 0; z-index: 1;">
+            <div class="snackbar-surface" style="transform: translate3d(0, 0, 0); margin: 0">
+                <span class="snackbar-message">Video download has failed.</span>
+                <div class="snackbar-actions">
+                    <button type="button" class="btn">retry</button>
+                    <i class="material-icons icon">close</i>
+                </div>
+            </div>
+        </aside>
+
+        <pre class="f-code"><bc></bc><code class="language-html">&lt;aside class="snackbar"&gt;
+    &lt;div class="snackbar-surface"&gt;
+        &lt;div class="snackbar-message"&gt;Video download has failed.&lt;/div&gt;
+        &lt;div class="snackbar-actions"&gt;
+            &lt;button type="button" class="btn"&gt;retry&lt;/button&gt;
+            &lt;i class="material-icons icon"&gt;close&lt;/i&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+ &lt;/aside&gt;
+</code>
+</pre>
+
+        <h2 class="h5-fluid" id="variations" itemprop="name">Snackbar variations</h2>
+
+        <ul :class="{'text-light': vDark}">
+            <li>To show snackbar, just add the class <mark class="f-c">is-active</mark>.</li>
+            <li>Even though snackbar will be hidden again after 5 seconds (by default), it won't be removed from normal
+                page flow, you
+                should remove <mark class="f-c">is-active</mark> class once the snackbar is hidden.</li>
+        </ul>
+
+        <div style="margin-bottom: 1.5rem" id="gBtns">
+            <button type="button" class="btn btn--raised waves-effect wd btn--snack" :class="{'btn--outlined': vDark}"
+                onclick="Snackbar.open('#s1', true)">default</button>
+            <button type="button" class="btn btn--raised waves-effect wd btn--snack" :class="{'btn--outlined': vDark}"
+                onclick="Snackbar.open('#s4', true)">vertical</button>
+        </div>
+
+
+        <aside class="snackbar" id="s1">
+            <div class="snackbar-surface">
+                <span class="snackbar-message">Video download has failed.</span>
+                <div class="snackbar-actions">
+                    <button type="button" class="btn">retry</button>
+                    <i class="material-icons icon">close</i>
+                </div>
+            </div>
+        </aside>
+
+        <aside class="snackbar snackbar--vertical snackbar--start" id="s4">
+            <div class="snackbar-surface">
+                <span class="snackbar-message">Connection timeout. Retrying after 10 seconds again to complete
+                    download.</span>
+                <div class="snackbar-actions">
+                    <button type="button" class="btn">retry</button>
+                    <i class="material-icons icon">close</i>
+                </div>
+            </div>
+        </aside>
+
+        <aside class="snackbar snackbar--persistent" id="s3">
+            <div class="snackbar-surface">
+                <span class="snackbar-message">Snackbar with infinite duration</span>
+                <div class="snackbar-actions">
+                    <button type="button" onclick="Snackbar.close('#s3')" class="btn">retry</button>
+                    <i class="material-icons icon" onclick="Snackbar.close('#s3')">close</i>
+                </div>
+            </div>
+        </aside>
+        
+        <pre class="f-code"><bc></bc><code class="language-html">&lt;aside class="snackbar snackbar--start snackbar--vertical"&gt;
+    &lt;div class="snackbar-surface"&gt;
+        &lt;div class="snackbar-message"&gt;Connection timeout. Retrying after 10 seconds again to complete download.&lt;/div&gt;
+        &lt;div class="snackbar-actions"&gt;
+            &lt;button type="button" class="btn"&gt;retry&lt;/button&gt;
+            &lt;i class="material-icons icon"&gt;close&lt;/i&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+ &lt;/aside&gt;
+</code>
+</pre>
+
+        <h2 class="h5-fluid" itemprop="name" id="persistent">Persistent Snackbar</h2>
+
+        <p class="text-fluid" itemprop="articleBody">
+            Use <mark class="f-c">snackbar--persistent</mark> to make the snackbar persistent.
+        </p>
+
+        <button type="button" class="btn btn--raised waves-effect wd btn--snack" :class="{'btn--outlined': vDark}"
+            onclick="Snackbar.open('#s3', false)">open snackbar</button>
+
+        <pre class="f-code"><bc></bc><code class="language-html">&lt;aside class="snackbar snackbar--persistent"&gt;
+    &lt;div class="snackbar-surface"&gt;
+        &lt;div class="snackbar-message"&gt;Snackbar with infinite duration.&lt;/div&gt;
+        &lt;div class="snackbar-actions"&gt;
+            &lt;button type="button" class="btn"&gt;retry&lt;/button&gt;
+            &lt;i class="material-icons icon"&gt;close&lt;/i&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/aside&gt;
+</code>
+</pre>
+
+        <h5 class="h5-fluid" id="classes">Classes Details</h5>
+        <table class="table--responsive table--bordered">
+            <thead>
+                <tr>
+                    <th>CSS Class</th>
+                    <th>Explanation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>snackbar</td>
+                    <td>Acts as a wrapper for the underlying content</td>
+                </tr>
+                <tr>
+                    <td data-n>snackbar-surface</td>
+                    <td>Snackbar surface, contains snackbar message and actions</td>
+                </tr>
+                <tr>
+                    <td data-nn>snackbar-message</td>
+                    <td>Contains snackbar slogan text</td>
+                </tr>
+                <tr>
+                    <td data-nn>snackbar-actions</td>
+                    <td>Contains buttons/icons</td>
+                </tr>
+                <tr>
+                    <td>snackbar--start</td>
+                    <td>Start aligned snackbar (Desktop Only)</td>
+                </tr>
+                <tr>
+                    <td>snackbar--persistent</td>
+                    <td>Snackbar with no timeout</td>
+                </tr>
+                <tr>
+                    <td>snackbar--vertical</td>
+                    <td>Stacked snackbar</td>
+                </tr>
+                <tr>
+                    <td>is-active</td>
+                    <td>Activates snackbar</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h6 class="h5-fluid">Next..</h6>
+        <section class="row row-next">
+            
+
+<article class="col col-sm-4">
+    <div class="card waves-effect card-next hoverable" v-bind:class="{'bg-dark': vDark}">
+        <a href="https://matcss.com/components/table.html">
+            <div class="card-section">
+                <i class="material-icons icon" :class="{'text-light': vDark}">widgets</i>
+                <span class="space-left--xs" :class="{'text-light': vDark}">Table</span>
+            </div>
+        </a>
+    </div>
+</article>
+
+
+            
+
+<article class="col col-sm-4">
+    <div class="card waves-effect card-next hoverable" v-bind:class="{'bg-dark': vDark}">
+        <a href="https://matcss.com/components/tabs.html">
+            <div class="card-section">
+                <i class="material-icons icon" :class="{'text-light': vDark}">widgets</i>
+                <span class="space-left--xs" :class="{'text-light': vDark}">Tabs</span>
+            </div>
+        </a>
+    </div>
+</article>
+
+
+            
+
+<article class="col col-sm-4">
+    <div class="card waves-effect card-next hoverable" v-bind:class="{'bg-dark': vDark}">
+        <a href="https://matcss.com/components/timeline.html">
+            <div class="card-section">
+                <i class="material-icons icon" :class="{'text-light': vDark}">widgets</i>
+                <span class="space-left--xs" :class="{'text-light': vDark}">Timeline</span>
+            </div>
+        </a>
+    </div>
+</article>
+
+
+        </section>
+
+    </article>
+</section>
+
+      
+      
+<footer class="footer row" id="site-footer">
+    <section class="col text-center">
+        <p class="text-fluid" style="margin-bottom: 0.25rem" itemprop="articleBody">
+        MatCSS is a modern and responsive CSS framework based on <a :class="{'text-light': vDark}" href="https://material.io/">Material design</a>.
+        </p>
+        <span>Made with <i class="material-icons icon text-red">favorite</i> by Faheem Nawaz</span>.
+        <br />
+        </section>
+</footer>
+    
+    </main>
+    
+    <button type="button" id="btnTop" class="btn pos-fixed pos--bottom-right btn--floating waves-effect waves-light">
+        <i class="material-icons">keyboard_arrow_up</i>
+    </button>
+
+    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
+<script src="../js//main.js"></script>
+    
+
+<script>
+    CM.toggleExpansionPanel('#cc', true);
+    app.activateLink('Snackbar');
+
+    var Snackbar = (function (document) {
+        var snackbarId = null,
+            id = null,
+            snackButtons = document.querySelectorAll('.btn--snack');
+        return {
+            open: function (sId, shouldCleanUp) {
+                snackbarId = sId;
+                document.querySelector(sId).classList.add('is-active');
+                toggleUIButtons(false);
+                if (shouldCleanUp) {
+                    var _this = this;
+                    id = setTimeout(_this.cleanUp, 6000);
+                } else {
+                    toggleUIButtons(false);
+                }
+            },
+            close: function (sId) {
+                document.querySelector(sId).classList.remove('is-active');
+                toggleUIButtons(true);
+            },
+            cleanUp: function () {
+                document.querySelector(snackbarId).classList.remove('is-active');
+                toggleUIButtons(true);
+                clearTimeout(this.id);
+            },
+        }
+
+        function toggleUIButtons(flag) {
+            [].forEach.call(snackButtons, function (b) {
+                b.style.pointerEvents = flag ? 'auto' : 'none';
+            });
+        }
+    })(document);
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Webpage",
+        "url": "https://amp.dev/documentation/guides-and-tutorials/optimize-and-measure/discovery ",
+        "name": "amp.dev",
+        "headline": "Material Design Avatars - CSS Framework",
+        "description": "Avatars are used to display images. They are used within other elements and can also contain text and icons",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://MatCSS"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "MatCSS",
+            "logo": {
+                "url": "",
+                "width": 512,
+                "height": 512,
+                "@type": "ImageObject"
+            }
+        },
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://amp.dev/static/img/sharing/docs-guide-600x314.png",
+            "width": 600,
+            "height": 314
+        }
+    }
+</script>
+
+
+  </body>
+</html>
