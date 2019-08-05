@@ -70,7 +70,7 @@
 <aside class="drawer site-sidenav scrollbar f-active" v-bind:class="{'is-active': vDrawerActive}" id="site-drawer">
     <div class="drawer-header flex flex--align-center flex--justify-center drawer-header--sm flex--dir-col">
         <div class="show-md-and-down" style="display: none">
-            <img src="../../images/logo.png" class="toolbar-logo" alt="" />
+            <img src="../images/logo.png" class="toolbar-logo" alt="" />
         </div>
     </div>
     <ul class="list list--drawer list--dense">
@@ -444,23 +444,28 @@
     @click="vDrawerActive = !vDrawerActive"></div>
       
       
-<header id="site-toolbar" class="toolbar z-elevation-4 toolbar--persistent">
-    <div class="toolbar-brand">
-        <div style="display: none" class="show-md-and-up">
-            <img src="../../images/logo.png" class="toolbar-logo" alt="" />
+<header id="site-toolbar" class="toolbar z-elevation-4">
+    <div class="toolbar-row toolbar-row--persistent">
+        <div class="toolbar-brand">
+            <div style="display: none" class="show-md-and-up">
+                <img src="../images/logo.png" class="toolbar-logo"
+                    alt="MatCSS - Material Design Framework based on Google Material design" />
+            </div>
+            <div class="show-md-and-down" style="display: none">
+                <i class="material-icons text-dark space-right--sm icon" v-bind:class="{'text-light': vDark}"
+                    @click="vDrawerActive = !vDrawerActive">menu</i>
+            </div>
+            <a href="https://MatCSS" class="" v-bind:class="{'text-light': vDark}">MatCSS</a>
         </div>
-        <div class="show-md-and-down" style="display: none">
-            <i class="material-icons text-dark space-right--sm icon" v-bind:class="{'text-light': vDark}" @click="vDrawerActive = !vDrawerActive">menu</i>
-        </div>
-        <a href="https://MatCSS" class="" v-bind:class="{'text-light': vDark}">MatCSS</a>
-    </div>
 
-    <div class="toolbar-section toolbar-section--visible">
-        <ul class="toolbar-section-right">
-            <li class="toolbar-item">
-                <i class="material-icons icon space-right--sm text-dark" @click="toggleTheme" v-bind:class="{'text-light': vDark}">invert_colors</i>
-            </li>
-        </ul>
+        <div class="toolbar-section">
+            <ul class="toolbar-section-right">
+                <li class="toolbar-item">
+                    <i class="material-icons icon space-right--sm text-dark" @click="toggleTheme"
+                        v-bind:class="{'text-light': vDark}">invert_colors</i>
+                </li>
+            </ul>
+        </div>
     </div>
 </header>
     
@@ -884,7 +889,7 @@
 
     
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
 <script src="../js//main.js"></script>
     
 

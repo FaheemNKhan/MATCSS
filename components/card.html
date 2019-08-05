@@ -57,7 +57,7 @@
 <aside class="drawer site-sidenav scrollbar f-active" v-bind:class="{'is-active': vDrawerActive}" id="site-drawer">
     <div class="drawer-header flex flex--align-center flex--justify-center drawer-header--sm flex--dir-col">
         <div class="show-md-and-down" style="display: none">
-            <img src="../../images/logo.png" class="toolbar-logo" alt="" />
+            <img src="../images/logo.png" class="toolbar-logo" alt="" />
         </div>
     </div>
     <ul class="list list--drawer list--dense">
@@ -431,23 +431,28 @@
     @click="vDrawerActive = !vDrawerActive"></div>
       
       
-<header id="site-toolbar" class="toolbar z-elevation-4 toolbar--persistent">
-    <div class="toolbar-brand">
-        <div style="display: none" class="show-md-and-up">
-            <img src="../../images/logo.png" class="toolbar-logo" alt="" />
+<header id="site-toolbar" class="toolbar z-elevation-4">
+    <div class="toolbar-row toolbar-row--persistent">
+        <div class="toolbar-brand">
+            <div style="display: none" class="show-md-and-up">
+                <img src="../images/logo.png" class="toolbar-logo"
+                    alt="MatCSS - Material Design Framework based on Google Material design" />
+            </div>
+            <div class="show-md-and-down" style="display: none">
+                <i class="material-icons text-dark space-right--sm icon" v-bind:class="{'text-light': vDark}"
+                    @click="vDrawerActive = !vDrawerActive">menu</i>
+            </div>
+            <a href="https://MatCSS" class="" v-bind:class="{'text-light': vDark}">MatCSS</a>
         </div>
-        <div class="show-md-and-down" style="display: none">
-            <i class="material-icons text-dark space-right--sm icon" v-bind:class="{'text-light': vDark}" @click="vDrawerActive = !vDrawerActive">menu</i>
-        </div>
-        <a href="https://MatCSS" class="" v-bind:class="{'text-light': vDark}">MatCSS</a>
-    </div>
 
-    <div class="toolbar-section toolbar-section--visible">
-        <ul class="toolbar-section-right">
-            <li class="toolbar-item">
-                <i class="material-icons icon space-right--sm text-dark" @click="toggleTheme" v-bind:class="{'text-light': vDark}">invert_colors</i>
-            </li>
-        </ul>
+        <div class="toolbar-section">
+            <ul class="toolbar-section-right">
+                <li class="toolbar-item">
+                    <i class="material-icons icon space-right--sm text-dark" @click="toggleTheme"
+                        v-bind:class="{'text-light': vDark}">invert_colors</i>
+                </li>
+            </ul>
+        </div>
     </div>
 </header>
     
@@ -581,7 +586,7 @@
 
         <div class="card w-responsive" style="max-width: 400px" v-bind:class="{'bg-dark': vDark}">
             <div class="card-media">
-                <img src="../../images//01.jpg" alt="css3material Framework Image" />
+                <img src="../images//01.jpg" alt="css3material Framework Image" />
                 <div class="card-media-text">
                     <h1 class="title text-light">Card Title</h1>
                     <h2 class="subtitle1 text-light">Card Title</h2>
@@ -655,7 +660,7 @@
         <div class="card w-responsive" style="max-width: 400px" v-bind:class="{'bg-dark': vDark}">
             <div class="card-section flex">
                 <div class="avatar">
-                    <img src="../../images//avatar2.svg"
+                    <img src="../images//avatar2.svg"
                         alt="MatCSS - A Responsive and Modern CSS Material Design Framework" />
                 </div>
                 <div class="space-left">
@@ -664,7 +669,7 @@
                 </div>
             </div>
             <div class="card-media space-top--sm space-bottom--sm">
-                <img class="no-border-radius" src="../../images//03.jpg" alt="" />
+                <img class="no-border-radius" src="../images//03.jpg" alt="" />
             </div>
             <div class="card-section" v-bind:class="{'text-light': vDark}">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ad aliquam aliquid odit maiores debitis
@@ -716,7 +721,7 @@
             <div class="col col-md-12 col-lg-12 col-xl-6">
                 <div class="card" v-bind:class="{'bg-dark': vDark}">
                     <div class="card-media">
-                        <img src="../../images//03.jpg" style="height: 195px" alt="MatCSS" />
+                        <img src="../images//03.jpg" style="height: 195px" alt="MatCSS" />
                     </div>
                     <div class="card-section card-actions flex--justify-end">
                         <i class="material-icons icon waves-effect">favorite</i>
@@ -734,7 +739,7 @@
                     <ul class="list list--two-line">
                         <li class="list-item">
                             <span class="list-item-start avatar">
-                                <img src="../../images//02.jpg" alt="MatCSS" />
+                                <img src="../images//02.jpg" alt="MatCSS" />
                             </span>
                             <span class="list-item-detail">
                                 <span class="title">List item Primary Text</span>
@@ -746,7 +751,7 @@
                         </li>
                         <li class="list-item">
                             <span class="list-item-start avatar">
-                                <img src="../../images//02.jpg" alt="MatCSS" />
+                                <img src="../images//02.jpg" alt="MatCSS" />
                             </span>
                             <span class="list-item-detail">
                                 <span class="title">List item Primary Text</span>
@@ -758,7 +763,7 @@
                         </li>
                         <li class="list-item">
                             <span class="list-item-start avatar">
-                                <img src="../../images//02.jpg" alt="MatCSS" />
+                                <img src="../images//02.jpg" alt="MatCSS" />
                             </span>
                             <span class="list-item-detail">
                                 <span class="title">List item Primary Text</span>
@@ -909,7 +914,7 @@
 
     
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
 <script src="../js//main.js"></script>
     
 

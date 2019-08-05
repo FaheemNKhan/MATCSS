@@ -48,7 +48,7 @@
 <aside class="drawer site-sidenav scrollbar f-active" v-bind:class="{'is-active': vDrawerActive}" id="site-drawer">
     <div class="drawer-header flex flex--align-center flex--justify-center drawer-header--sm flex--dir-col">
         <div class="show-md-and-down" style="display: none">
-            <img src="../../images/logo.png" class="toolbar-logo" alt="" />
+            <img src="../images/logo.png" class="toolbar-logo" alt="" />
         </div>
     </div>
     <ul class="list list--drawer list--dense">
@@ -422,23 +422,28 @@
     @click="vDrawerActive = !vDrawerActive"></div>
       
       
-<header id="site-toolbar" class="toolbar z-elevation-4 toolbar--persistent">
-    <div class="toolbar-brand">
-        <div style="display: none" class="show-md-and-up">
-            <img src="../../images/logo.png" class="toolbar-logo" alt="" />
+<header id="site-toolbar" class="toolbar z-elevation-4">
+    <div class="toolbar-row toolbar-row--persistent">
+        <div class="toolbar-brand">
+            <div style="display: none" class="show-md-and-up">
+                <img src="../images/logo.png" class="toolbar-logo"
+                    alt="MatCSS - Material Design Framework based on Google Material design" />
+            </div>
+            <div class="show-md-and-down" style="display: none">
+                <i class="material-icons text-dark space-right--sm icon" v-bind:class="{'text-light': vDark}"
+                    @click="vDrawerActive = !vDrawerActive">menu</i>
+            </div>
+            <a href="https://MatCSS" class="" v-bind:class="{'text-light': vDark}">MatCSS</a>
         </div>
-        <div class="show-md-and-down" style="display: none">
-            <i class="material-icons text-dark space-right--sm icon" v-bind:class="{'text-light': vDark}" @click="vDrawerActive = !vDrawerActive">menu</i>
-        </div>
-        <a href="https://MatCSS" class="" v-bind:class="{'text-light': vDark}">MatCSS</a>
-    </div>
 
-    <div class="toolbar-section toolbar-section--visible">
-        <ul class="toolbar-section-right">
-            <li class="toolbar-item">
-                <i class="material-icons icon space-right--sm text-dark" @click="toggleTheme" v-bind:class="{'text-light': vDark}">invert_colors</i>
-            </li>
-        </ul>
+        <div class="toolbar-section">
+            <ul class="toolbar-section-right">
+                <li class="toolbar-item">
+                    <i class="material-icons icon space-right--sm text-dark" @click="toggleTheme"
+                        v-bind:class="{'text-light': vDark}">invert_colors</i>
+                </li>
+            </ul>
+        </div>
     </div>
 </header>
     
@@ -461,11 +466,11 @@
         </p>
 
         <div class="Tooltip bs-2">
-            <img src="../../images//Tooltip1.svg" alt="Material Design using Pure CSS - MatCSS" />
+            <img src="../images//Tooltip1.svg" alt="Material Design using Pure CSS - MatCSS" />
         </div>
 
         <div class="Tooltip bg-primary bs-2 text-light">
-            <img src="../../images//Tooltip2.svg" alt="Material Design using Pure CSS - MatCSS" />
+            <img src="../images//Tooltip2.svg" alt="Material Design using Pure CSS - MatCSS" />
         </div>
 
         <div class="Tooltip bs-2 bg-red text-light">
@@ -491,7 +496,7 @@
                 <li class="list-item">
                     <span class="list-item-start">
                         <div class="Tooltip">
-                            <img src="../../images//Tooltip1.svg" alt="Material Design using Pure CSS - MatCSS" />
+                            <img src="../images//Tooltip1.svg" alt="Material Design using Pure CSS - MatCSS" />
                         </div>
                     </span>
                     <span class="list-item-detail">
@@ -505,7 +510,7 @@
                 <li class="list-item">
                     <span class="list-item-start">
                         <div class="Tooltip">
-                            <img src="../../images//Tooltip2.svg" alt="Material Design using Pure CSS - MatCSS" />
+                            <img src="../images//Tooltip2.svg" alt="Material Design using Pure CSS - MatCSS" />
                         </div>
                     </span>
                     <span class="list-item-detail">
@@ -516,7 +521,7 @@
                 <li class="list-item">
                     <span class="list-item-start">
                         <div class="Tooltip">
-                            <img src="../../images//Tooltip5.svg" alt="Material Design using Pure CSS - MatCSS" />
+                            <img src="../images//Tooltip5.svg" alt="Material Design using Pure CSS - MatCSS" />
                         </div>
                     </span>
                     <span class="list-item-detail">
@@ -530,7 +535,7 @@
                 <li class="list-item">
                     <span class="list-item-start">
                         <div class="Tooltip">
-                            <img src="../../images//Tooltip6.svg" alt="Material Design using Pure CSS - MatCSS" />
+                            <img src="../images//Tooltip6.svg" alt="Material Design using Pure CSS - MatCSS" />
                         </div>
                     </span>
                     <span class="list-item-detail">
@@ -552,15 +557,15 @@
         </p>
 
         <div class="Tooltip Tooltip--sm">
-            <img src="../../images//Tooltip2.svg" alt="CSS Material Design Framework Tooltip" />
+            <img src="../images//Tooltip2.svg" alt="CSS Material Design Framework Tooltip" />
         </div>
 
         <div class="Tooltip">
-            <img src="../../images//Tooltip2.svg" alt="CSS Material Design Framework Tooltip" />
+            <img src="../images//Tooltip2.svg" alt="CSS Material Design Framework Tooltip" />
         </div>
 
         <div class="Tooltip Tooltip--lg">
-            <img src="../../images//Tooltip2.svg" alt="CSS Material Design Framework Tooltip" />
+            <img src="../images//Tooltip2.svg" alt="CSS Material Design Framework Tooltip" />
         </div>
 
         <pre class="f-code"><bc></bc>
@@ -665,7 +670,7 @@
 
     
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
 <script src="../js//main.js"></script>
     
 
