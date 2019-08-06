@@ -2800,18 +2800,18 @@ main {
   z-index: 16;
   /* Highest Priority */
   display: none;
+  bottom: 14px;
 }
 .snackbar-surface {
-  margin-left: auto;
-  margin-right: auto;
   background-color: #323232;
-  box-sizing: border-box;
   border-radius: 4px;
-  padding: 8px 16px;
-  transform: translate3d(0, 150%, 0);
+  padding: 0px 16px;
+  transform: scale(0.85);
+  transform-origin: center;
   will-change: transform;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
   display: flex;
+  opacity: 0;
   min-height: 48px;
   position: relative;
   align-items: center;
@@ -2838,10 +2838,11 @@ main {
 }
 .snackbar--vertical > .snackbar-surface {
   flex-direction: column;
+  padding: 8px 16px;
 }
 .snackbar--vertical > .snackbar-surface .snackbar-message {
   align-self: flex-start;
-  padding-top: 10px;
+  padding-top: 6px;
 }
 .snackbar--vertical > .snackbar-surface .snackbar-actions {
   align-self: flex-end;
@@ -2851,15 +2852,15 @@ main {
   display: block;
 }
 .snackbar.is-active > .snackbar-surface {
-  animation: ss 250ms 2ms ease forwards;
+  animation: ss 200ms 1ms ease forwards;
 }
 .snackbar.is-active:not(.snackbar--persistent) {
-  animation: hsd 250ms linear 5s forwards;
+  animation: hsd 150ms linear 5s forwards;
 }
 @media (min-width: 601px) {
-  .snackbar {
-    bottom: 14px;
-    left: calc(50% - 150px);
+  .snackbar:not(.snackbar--start):not(.snackbar--end) {
+    left: 50%;
+    transform: translateX(-50%);
   }
   .snackbar-surface {
     min-width: 300px;
@@ -2867,6 +2868,9 @@ main {
   }
   .snackbar--start {
     left: 20px;
+  }
+  .snackbar--end {
+    right: 20px;
   }
 }
 @media (max-width: 600px) {
@@ -2878,12 +2882,13 @@ main {
 }
 @keyframes hsd {
   to {
-    transform: translate3d(0, 150%, 0);
+    opacity: 0;
   }
 }
 @keyframes ss {
   to {
-    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
@@ -4293,14 +4298,14 @@ fieldset > .form-item:last-child {
   top: 50%;
   left: 50%;
   transform: scale(0);
-  width: 42px;
-  height: 42px;
-  margin-left: -21px;
-  margin-top: -21px;
+  width: 36px;
+  height: 36px;
+  margin-left: -18px;
+  margin-top: -18px;
   border-radius: 50%;
   cursor: pointer;
   opacity: 0;
-  transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1), opacity 100ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 120ms cubic-bezier(0.4, 0, 0.2, 1), opacity 100ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-check::before,

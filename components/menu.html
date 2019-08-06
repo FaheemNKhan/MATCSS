@@ -472,59 +472,72 @@
         </p>
 
         <section class="vMenuWrapper">
-            <button type="button" class="btn menu menu--clickable">
-                <span>toggle menu</span>
-                <ul class="menu-content">
-                    <li class="list-item waves-effect">
-                        <span class="list-item-detai">
-                            Action 1
-                        </span>
+            <div class="menu menu--hoverable menu--nested menu--sm">
+                <button type="button" class="btn btn--raised">hello world</button>
+                <ul class="menu-surface list list--dense">
+                    <li class="list-item">
+                        <span class="list-item-detail">Action 1</span>
                     </li>
-                    <li class="list-item waves-effect">
-                        <span class="list-item-detai">
-                            Action 2
-                        </span>
+                    <li class="list-item">
+                        <span class="list-item-detail">Action 2</span>
                     </li>
-                    <li class="list-item waves-effect">
-                        <span class="list-item-detai">
-                            Action 3
-                        </span>
-                    </li>
-                </ul>
-            </button>
+                    <div class="menu menu--block menu--sm no-padding menu--hoverable menu--right menu--default">
+                        <li class="list-item">
+                            <span class="list-item-detail">Action 3</span>
+                            <span class="list-item-end material-icons icon">1</span>
+                        </li>
+                        <ul class="menu-surface list list--dense">
+                            <li class="list-item">
+                                <span class="list-item-detail">Faheem</span>
+                            </li>
+                            <li class="list-item">
+                                <span class="list-item-detail">Saad</span>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
         </section>
 
         <h3 class="h5-fluid" itemprop="name">Toolbar Menu</h3>
 
         <section class="vMenuWrapper">
-            <nav class="toolbar toolbar--persistent bs-2">
-                <div class="toolbar-title">
-                    <div class="show-md-and-down">
-                        <i class="material-icons icon">menu</i>
+            <nav class="toolbar bs-2">
+                <div class="toolbar-row toolbar-row--persistent">
+                    <div class="toolbar-brand">
+                        <div class="show-md-and-down">
+                            <i class="material-icons icon">menu</i>
+                        </div>
+                        <span class="space-left--sm title text-light">Standard</span>
                     </div>
-                    <span class="space-left--sm title text-light">Standard</span>
-                </div>
-                <div class="toolbar-section">
-                    <ul class="toolbar-section-right">
+                    <div class="toolbar-section">
+                        <ul class="toolbar-section-right">
 
-                        <li class="toolbar-item hide-md-and-down">
-                            <i class="material-icons icon">3d_rotation</i>
-                        </li>
+                            <li class="toolbar-item hide-md-and-down">
+                                <i class="material-icons icon">3d_rotation</i>
+                            </li>
 
-                        <li class="toolbar-item">
-                            <i class="material-icons icon">print</i>
-                        </li>
+                            <li class="toolbar-item">
+                                <i class="material-icons icon">print</i>
+                            </li>
 
-                        <li class="toolbar-item">
-                            <i class="material-icons menu--top-right menu--absolute icon menu menu--hoverable">more_vert
-                                <ul class="menu-content list">
-                                    <li class="list-item waves-effect">Faheem Nawaz</li>
-                                    <li class="list-item waves-effect">Logout</li>
-                                    <li class="list-item waves-effect">Exit</li>
+                            <div class="menu menu--block no-padding menu--top-right menu--hoverable">
+                                <li class="toolbar-item">
+                                    <i class="material-icons icon">more_vert</i>
+                                </li>
+                                <ul class="menu-surface list list--dense">
+                                    <li class="list-item">
+                                        <span class="list-item-detail">Faheem</span>
+                                    </li>
+                                    <li class="list-item">
+                                        <span class="list-item-detail">Saad</span>
+                                    </li>
+                                    <li class="list-item">
+                                        <span class="list-item-detail">Logout</span>
+                                    </li>
                                 </ul>
-                            </i>
-                        </li>
-                    </ul>
+                            </div>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </section>

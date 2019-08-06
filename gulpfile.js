@@ -14,7 +14,7 @@ gulp.task("browser-sync", () => {
     bs.init({
         server: {
             baseDir: './',
-            index: 'components/banner.html'
+            index: 'components/menu.html'
         }
     });
   
