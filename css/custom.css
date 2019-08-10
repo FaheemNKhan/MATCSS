@@ -161,7 +161,7 @@ pre[class*="language-"] {
 
 @media (max-width: 772px) {
   pre[class*="language-"] {
-    font-size: 13px
+    font-size: 14px
   }
 }
 
@@ -370,9 +370,9 @@ body#dark .token.inserted {
   padding: 0;
 }
 
-@media (min-width: 1122px) {
+@media (min-width: 1280px) {
   #site-wrapper {
-    margin-left: 270px
+    margin-left: 300px
   }
 
   #site-drawer {
@@ -391,7 +391,7 @@ body#dark .token.inserted {
 
 body>main>.row.row--centered,
 body>main>.row.row-centered {
-  margin-top: 54px !important
+  margin-top: 42px !important
 }
 
 #site-toolbar {
@@ -422,11 +422,6 @@ a {
 
 .expansion-panel-header.list-item.is-active::before {
   display: none;
-}
-
-.expansion-panel-header.list-item,
-#site-drawer .list>.list-item {
-  margin: 0px 8px
 }
 
 body#dark .expansion-panel-header.list-item.is-active .list-item-detail,
@@ -556,6 +551,7 @@ body#dark #site-drawer .list-item:hover {
   .h1-fluid+hr {
     margin: .25rem 0
   }
+
   .h1-fluid {
     margin-top: 0 !important
   }
@@ -572,7 +568,7 @@ body#dark #site-drawer .list-item:hover {
 }
 
 ul.list-nested>li {
-  padding-left: 4.15rem !important
+  padding-left: 4rem !important
 }
 
 [data-n] {
@@ -599,18 +595,13 @@ ul.list-nested>li {
   overflow: hidden;
   z-index: 1;
   transform: translateZ(0);
-  transition: height 0.15s linear;
-  -webkit-transition: height 0.15s linear;
-  -moz-transition: height 0.15s linear;
-  -ms-transition: height 0.15s linear;
-  -o-transition: height 0.15s linear;
+  transition: height 0.15s linear
 }
 
 .expansion-panel.smooth .expansion-panel-body.is-active,
 .expansion-panel--smooth .expansion-panel-body.is-active,
 .expansion-panel:not(.expansion-panel--default)>li.is-active .expansion-panel-body {
   padding: 16px 16px 24px 16px;
-  opacity: 1;
 }
 
 .drawer .expansion-panel-body.is-active {
@@ -971,8 +962,11 @@ body:not(#dark) .waves-effect:not(.wd) .waves-ripple {
   left: 50%;
   top: 5px;
   transform: translateX(-50%);
-  z-index: 2;
-  border: 1px solid #4582f6
+  z-index: 1
+}
+
+.btnExpand:hover {
+  background-color: #eee
 }
 
 .f-code-mini {
@@ -988,33 +982,72 @@ body:not(#dark) .waves-effect:not(.wd) .waves-ripple {
   background: transparent !important
 }
 
+.drawer-header {
+  position: relative;
+  padding: 8px 16px 4px;
+  min-height: 80px;
+  box-sizing: border-box;
+}
+
+.drawer-header--sm {
+  min-height: 54px;
+}
+
+.drawer-header--lg {
+  min-height: 172px;
+}
+
+.drawer-header .avatar,
+.drawer-header a {
+  display: block;
+}
+
+.drawer-header .title {
+  margin-bottom: -6px;
+  margin-top: 0;
+}
+
+.drawer .subtitle {
+  padding: 0 16px;
+  display: block;
+  margin: 0.5rem 0;
+  line-height: normal;
+}
+
+.drawer-header .subtitle {
+  padding: 0;
+}
+
+.table--bordered th, .table--bordered td {
+  border: 1px solid #999;
+  padding: 4px 8px
+}
+
 /* Mobile UI */
 /* Copied - Codepen.io */
 .c-phone {
-  width: 100%;
-  max-width: 260px;
-  height: 600px;
-  max-height: 300px;
-  border-radius: 0 1rem 1rem 1rem;
+  width: 300px;
+  max-width: 100%;
+  height: 320px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
   position: relative;
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 600px) {
   .c-phone {
-    max-width: 270px;
-    max-height: 500px;
+    max-width: 300px;
+    height: 530px
   }
 }
 
 .c-phone__front-camera {
-  width: 4%;
-  background: #666;
-  border-radius: 50%;
-  border: 1px solid rgba(204, 204, 204, 0.2);
+  width: 100%;
+  background: #ccc;
   position: absolute;
-  top: 4px;
-  left: 48%
+  top: 0;
+  left: 0;
+  height: 24px;
+  right: 0;
 }
 
 .c-phone__front-camera::after {
@@ -1037,33 +1070,29 @@ body:not(#dark) .waves-effect:not(.wd) .waves-ripple {
 }
 
 .c-phone__interface__top-bar {
-  padding: 24px 10px 10px 10px;
   font-size: 0.5em;
 }
 
 .c-phone__interface__top-bar ul {
-  padding: 0;
+  padding: 0 6px 0 0;
   margin: 0;
   text-align: right;
 }
 
 .c-phone__interface__top-bar ul li {
   display: inline-block;
-  font-size: 14px;
+  font-size: 14px
 }
 
-.c-phone__interface__top-bar ul li:hover {
-  cursor: pointer;
+.c-phone__interface__top-bar i {
+  width: 20px !important;
+  font-size: 22px;
+  padding: 4px 0 0 0;
+  height: 20px
 }
 
 .c-phone__interface__text {
   padding: 4em 1em 0 1em;
-}
-
-.c-phone__interface__top-bar .icon {
-  font-size: 22px;
-  width: 18px;
-  height: 18px
 }
 
 .c-phone__interface__navigation {
@@ -1079,7 +1108,11 @@ body:not(#dark) .waves-effect:not(.wd) .waves-ripple {
 
 #dark .c-phone {
   color: rgba(255, 255, 255, .87);
-  box-shadow: 0px 1px 3px 0px rgba(255, 255, 255, 0.2), 0px 1px 1px 0px rgba(255, 255, 255, 0.14), 0px 2px 1px -1px rgba(255, 255, 255, 0.12);
+  background: #2C3531
+}
+
+#dark .c-phone__front-camera {
+  background: #777
 }
 
 .h1-fluid {
@@ -1102,6 +1135,7 @@ body:not(#dark) .waves-effect:not(.wd) .waves-ripple {
   .h1-fluid {
     font-size: 250%;
   }
+
   .h5-fluid {
     font-size: 145%
   }
@@ -1112,6 +1146,7 @@ body:not(#dark) .waves-effect:not(.wd) .waves-ripple {
     font-size: 285%;
     margin: 1rem 0 1.25rem 0
   }
+
   .h5-fluid {
     font-size: 160%;
   }
@@ -1121,6 +1156,7 @@ body:not(#dark) .waves-effect:not(.wd) .waves-ripple {
   .h1-fluid {
     font-size: 300%
   }
+
   .h5-fluid {
     font-size: 165%
   }
@@ -1130,13 +1166,14 @@ body:not(#dark) .waves-effect:not(.wd) .waves-ripple {
   .h1-fluid {
     font-size: 350%
   }
+
   .h5-fluid {
     font-size: 180%
   }
 }
 
-@media (max-width: 1121px) {
-  .show-md-and-down {
+@media (max-width: 1280px) {
+  .show-lg-and-down {
     display: block !important
   }
 }
